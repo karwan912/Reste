@@ -1,2 +1,23 @@
-/*******************index.html***************************/
-.beetwenstyle{margin: 1rem 0;}
+/*******************box.html***************************/
+.img-style{height: 2rem;width: 2rem;}
+#heji{font-size: 48px;color: red;}
+
+/*************order.html**************/
+.img-style3{height:3.8rem;width:3.8rem;}
+.datestyle{font-size: 12px;}
+.float-right{float:right;}
+.boxcont1{margin: 2rem 0rem;}
+
+
+
+/************drawback.html***************/
+.img-style2{height:5rem;width:5rem;}
+.boxcont2{margin: 0.5rem 0rem;}
+.img-bg-login{background-size: 100%;background:url(../images/login-bg.jpg); max-width: 100%;  height: auto;}
+.my-black{color: #070707}
+
+
+
+/************personal.html********************/
+.divstyle{margin: 2rem 2rem;}
+.myinline{display:inline;}
