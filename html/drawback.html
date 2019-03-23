@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html >
 <head>
-	<title>个人信息</title>
+	<title>退款退货</title>
 	<!-- for-mobile-apps -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -28,7 +28,6 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 <!--自己的JavaScript-->
 <script src="../js/main.js"></script>
-
 <!-- web fonts --> 
 <link href='http://fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -234,7 +233,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- banner -->
 <div class="banner banner10">
 	<div class="container">
-		<h2>个人信息</h2>
+		<h2>退款退货</h2>
 	</div>
 </div>
 <!-- //banner -->   
@@ -243,96 +242,63 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<div class="container">
 		<ul>
 			<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页</a> <i>/</i></li>
-			<li>个人信息</li>
+			<li>退款退货</li>
 		</ul>
 	</div>
 </div>
 <!-- //breadcrumbs --> 	
 <!-- short codes -->
-<div class="typo codes  img-bg-login" >
+<div class="typo codes img-bg-login">
 	<div class="container"> 
-		<h3 class="agileits-title">个人信息</h3>
+		<h3 class="agileits-title">退款退货</h3>
 
 
-
-		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-5">
-				<form method="post" action="">
-					<div class="divstyle"> 
-						<img  class="img-circle img-style2  divstyle " id="" src="../images/14.jpg">&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;<br/>
-						<input type="file" name="更换照片" class="upfile" value="更换照片">
-					</div>
+		<div class="row ">
+			<div class="col-md-4"></div>
+			<div class="col-md-5 boxcont1">
+				<form action="" method="">
 					
-				
+					<div class="boxcont2">
+						退款商品： <img  class="img-style2 img-circle" src="../images/15.jpg"  alt="Cinque Terre">   &nbsp;&nbsp;&nbsp;&nbsp; <label class="" id=""> 商品名称:Alimjan Yasin</label>
+					</div>
+					<div class="">
+
+						退款原因：  
+
+						<div class="boxcont2">
+							<label><input type="radio" name="optionsRadios" id="optionsRadios1" value="radio1" checked="">多拍/拍错/不想要</label>
+						</div>
+						<div class="boxcont2">
+							<label><input type="radio" name="optionsRadios" id="optionsRadios2" value="radio2">缺货</label>
+						</div>
+						<div class="boxcont2">
+							<label><input type="radio" name="optionsRadios" id="optionsRadios3" value="radio3">商品质量问题</label>
+						</div>
+						<div class="boxcont2">
+							<label><input type="radio" name="optionsRadios" id="optionsRadios4" value="radio4">不想要</label>
+						</div>
 						
-					<div class="divstyle ">
-						<div class="col-lg">
-							<div class="input-group ">
-								<span class="input-group-addon">用户名</span>
-								<input type="text" class="form-control"  id="username" placeholder="AlimjanYasin" disabled="disabled">
-								<span class="input-group-btn">
-									<button class="btn btn-success" type="button" id="username" onclick="changetype();">
-										修改
-									</button>
-								</span>
-							</div><!-- /input-group -->
-						</div><!-- /.col-lg-6 -->
-					</div>
-				
-
-							
-				
-					<div class="divstyle ">
-						<div class="col-lg">
-							<div class="input-group ">
-								<span class="input-group-addon">注册邮箱</span>
-								<input type="email" class="form-control"  id="useremail" placeholder="A_Yasin@163.com" disabled="disabled">
-								<span class="input-group-btn">
-									<button class="btn btn-success" id="useremail" type="button" onclick="changetype();">
-										修改
-									</button>
-								</span>
-							</div><!-- /input-group -->
-						</div><!-- /.col-lg-6 -->
+						
 					</div>
 
-
-					<div class="divstyle ">
-						<div class="col-lg">
-							<div class="input-group ">
-								<span class="input-group-addon">收货地址</span>
-								<input type="text" class="form-control" id="useraddr" placeholder="深圳市南山区深圳大学" disabled="disabled">
-								<span class="input-group-btn">
-									<button class="btn btn-success" id="useraddr" type="button" onclick="changetype();">
-										修改
-									</button>
-								</span>
-							</div><!-- /input-group -->
-						</div><!-- /.col-lg-6 -->
+					<div class="">
+						
+						<div class="form-group">
+							<label for="comment">	退款说明：</label>
+							<textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
 					</div>
-
-					
-					
-
-					
-
-
-					
-					<div class="divstyle">
-						<button class="btn btn-warning" onclick="changpass();" id="">修改  登陆/支付  密码</button>
+					<div class="">
+						图片上传： <input type="file" name="">
 					</div>
-					<div class="divstyle">
-						<input type="submit" name="提交" class="btn btn-success" id="">
+					<div>
+						<button class="btn btn-success  float-right" id="">提交</button>
 					</div>
 				</form>
 			</div>
-			<div class="col-md-6"></div>
+			<div class="col-md-3"></div>
 			
 		</div>
-
 
 
 

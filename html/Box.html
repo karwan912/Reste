@@ -46,7 +46,7 @@
 </script>
 <!-- //end-smooth-scrolling --> 
 </head> 
-<body> 
+<body onload="Counter();"> 
 	<!-- header modal -->
 	<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
 		aria-hidden="true">
@@ -242,17 +242,86 @@
 		<div class="container">
 			<ul>
 				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页</a> <i>/</i></li>
-				<li>待用页面</li>
+				<li>购物车</li>
 			</ul>
 		</div>
 	</div>
 	<!-- //breadcrumbs --> 	
 	<!-- short codes -->
-	<div class="typo codes">
+	<div class="typo codes img-bg-login ">
 		<div class="container"> 
-			<h3 class="agileits-title">待用页面</h3>
+			<h3 class="agileits-title">购物车</h3>
 			
-			
+			<div>
+				<div class="row">
+					<table class=" table table-striped table-hover" id="Box-table">
+					<thead>
+						<tr>
+							
+							<th >
+								图片
+							</th>
+							<th>
+								产品
+							</th>
+							<th>
+								单价
+							</th>
+							<th>
+								数量
+							</th>
+							<th>
+								小计
+							</th>
+							<th>
+								操作
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<div class="Box-item" id="Box-item1">
+							<tr class="info" >
+								
+								<td>
+									<img class="img-circle img-style "  id=""  src="../images/13.jpg">
+								</td>
+								<td>
+									电视
+								</td>
+								<td>
+									<label class="" id="price">99</label>￥
+								</td>
+								<td>
+									<button type="button" class="btn btn-success  btn-sm" id="csub" onclick="Counter();"><span class="iconfont  icon-zhankai  " id="csub"></span></button>
+									<label class="" id="count">1</label>
+									<button type="button" class="btn btn-success  btn-sm" id="cadd" onclick="Counter();"><span class="iconfont icon-zhankai1 " id="cadd"></span></button>
+								</td>
+								<td>
+									<label class="" id="Xiaoji" onload="Counter();"></label>￥
+								</td>
+								<td>
+									<button type="button" class="btn btn-success  btn-sm" id="Box-item1" onclick="removeitem();"><span class="iconfont  icon-lajixiang  " id="Box-item1"></span></button>
+									
+								</td>
+							</tr>
+						</div>
+						
+					</tbody>
+					</table>
+				</div>
+				<div class="row">
+			<div class="col-md-8"></div>
+			<div class="col-md-4">
+				<div class="hejistyle">
+					<label class="" id="heji"></label>￥&nbsp;&nbsp;&nbsp;&nbsp;
+					<button class="btn btn-success" id="">支付</button>
+				</div>
+
+			</div>
+		</div>
+
+
+			</div>
 			
 			
 			
