@@ -25,6 +25,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--AlibabaIcon 在线用法-->
 <link href="https://at.alicdn.com/t/font_1039551_17bcnx7yvoy.css" rel="stylesheet">
 
+<!--自己的CSS-->
+<link href="../css/main.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--自己的JavaScript-->
+<script src="../js/main.js"></script>
 <!-- web fonts --> 
 <link href='http://fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -148,13 +153,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</form>
 			</div>
 		</div>
-		<div class="cart cart box_1"> 
-			<form action="#" method="post" class="last"> 
-				<input type="hidden" name="cmd" value="_cart" />
-				<input type="hidden" name="display" value="1" />
-				<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
-			</form>   
-		</div>  
+		
 	</div>
 </div>
 <!-- //header -->
@@ -219,10 +218,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<li><a href="about.html">关于我们</a></li> 
 					<li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的 <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="icons.html">个人信息</a></li>
-							<li><a href="codes.html">查看订单</a></li>
-							<li><a href="codes.html">已购买</a></li>
-							<li><a href="codes.html">安全退出</a></li>     
+							<li><a href="Box.html">购物车</a></li>
+							<li><a href="order.html">查看订单</a></li>
+							<li><a href="buyed.html">已购买</a></li>
+							<li><a href="personal.html">个人信息</a></li>
+							<li><a href="index.html">安全退出</a></li>     
 						</ul>
 					</li>  
 					<li><a href="mail.html">留言</a></li>
@@ -1169,21 +1169,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 </script>
 <script type="text/javascript" src="../js/jquery.flexisel.js"></script>
 <!-- cart-js -->
-<script src="../js/minicart.js"></script>
-<script>
-	w3ls.render();
 
-	w3ls.cart.on('w3sb_checkout', function (evt) {
-		var items, len, i;
-
-		if (this.subtotal() > 0) {
-			items = this.items();
-
-			for (i = 0, len = items.length; i < len; i++) { 
-			}
-		}
-	});
-</script>  
 <!-- //cart-js --> 
 </body>
 </html>
