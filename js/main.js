@@ -82,7 +82,7 @@ function removeitem(e){
         //获取元素名称
         var tid = targ.id;
 
-       //alert(tid);
+      //alert(tid);
         if (tid=="username") {
        
           var temp = document.getElementById('username').removeAttribute('disabled');   
@@ -91,11 +91,11 @@ function removeitem(e){
             var temp = document.getElementById('useremail').removeAttribute('disabled');   
         }else if(tid=="useraddr"){
             var temp = document.getElementById('useraddr').removeAttribute('disabled');
-        }else if(tid="user-log-pass"){
+        }else if(tid=="user-log-pass"){
         	 var temp1 = document.getElementById('user-log-pass-old').removeAttribute('disabled');
         	  var temp2 = document.getElementById('user-log-pass-new1').removeAttribute('disabled');
         	   var temp3 = document.getElementById('user-log-pass-new2').removeAttribute('disabled');
-        }else if(tid="user-pay-pass"){
+        }else if(tid=="user-pay-pass"){
         	 var temp4 = document.getElementById('user-pay-pass-old').removeAttribute('disabled');
         	  var temp5 = document.getElementById('user-pay-pass-new1').removeAttribute('disabled');
         	   var temp6 = document.getElementById('user-pay-pass-new2').removeAttribute('disabled');
