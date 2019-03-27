@@ -1,0 +1,82 @@
+        
+        /********正确连接数据库并调取数据***********/
+        string mysqlstr = System.Configuration.ConfigurationManager.ConnectionStrings["SqlConnStr"].ConnectionString;
+        OleDbConnection conn = new OleDbConnection(mysqlstr);
+        OleDbCommand cmd;
+        OleDbDataReader datar;
+        string sqlstr = "select * from UserList";
+        conn.Open();
+        cmd = new OleDbCommand(sqlstr, conn);
+        datar = cmd.ExecuteReader();
+        while (datar.Read())
+        {
+            alim.Text += datar["Username"].ToString();
+        }
+        datar.Close();
+        conn.Close();
+
+获取时间戳
+ string id=  DateTime.Now.ToString("yyyyMMddHHmmssffff");  
+
+//  注册函数   
+  protected void Register(object sender, EventArgs e)
+    {
+
+        string mysqlstr = System.Configuration.ConfigurationManager.ConnectionStrings["SqlConnStr"].ConnectionString;
+        OleDbConnection conn = new OleDbConnection(mysqlstr);
+        OleDbCommand cmd;
+        OleDbDataReader datar;
+
+        string usnm = Request["UsName"];
+        string usem = Request["UsEmail"];
+        string uslp = Request["UsLogPass"];
+        string uslp2 = Request["UsLogPass2"];
+
+        Response.Write(usem);
+
+
+        TimeSpan ts = DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0, 0);
+        string id = Convert.ToInt64(ts.TotalSeconds).ToString();
+       // Response.Write(id);
+
+
+        string insertsql = "insert into Userlist(UserID,UserName,UserEmail,LoginPass) values('" + id + "','" + usnm + "','" + usem + "','" + uslp + "')";
+
+
+
+        conn.Open();
+        cmd = new OleDbCommand(insertsql, conn);
+        try
+        {
+            int i = cmd.ExecuteNonQuery();
+            if (i > 0)
+            {
+                Response.Write("添加成功");
+            }
+            else { Response.Write("失败"); }
+        }
+        catch (Exception ex)
+        {
+            Response.Write("添加失败");
+        }
+
+        conn.Close();
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+//
+html 控件获得数据到后台
