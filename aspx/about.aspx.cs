@@ -10,5 +10,14 @@ public partial class aspx_about : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
+        if (Session["Usernm"] == null)
+        {
+
+        }
+        else
+        {
+            string s = Session["Usernm"].ToString(); ;
+            MyName.InnerText = s;
+        }
     }
 }

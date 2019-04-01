@@ -74,26 +74,27 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 								<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
 									<div class="facts">
 										<div class="register">
-											<form action="#" method="post">			
-												<input name="Email" placeholder="邮箱地址" type="text" required="">						
-												<input name="Password" placeholder="密码" type="password" required="">										
+													<form action="login.aspx" method="post">	
+												<input name="Email" placeholder="邮箱地址" type="email" required="" id="uslnm">						
+												<input name="Password" placeholder="密码" type="password" required="" id="uslem">										
 												<div class="sign-up">
-													<input type="submit" value="登陆"/>
+                                                   <input type="submit" value="登陆" "/>
 												</div>
 											</form>
 										</div>
-									</div> 
+									</div>  
 								</div>	 
 								<div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">
 									<div class="facts">
 										<div class="register">
-											<form action="#" method="post">			
-												<input placeholder="用户名" name="Name" type="text" required="">
-												<input placeholder="邮箱地址" name="Email" type="email" required="">	
-												<input placeholder="密码" name="Password" type="password" required="">	
-												<input placeholder="再次输入密码" name="Password" type="password" required="">
+											<form action="Register.aspx" method="post" >			
+												<input  placeholder="用户名" name="Name" type="text" required="" id="UsName">
+												<input placeholder="邮箱地址" name="Email"  type="email" required=""    id="UsEmail">	
+												<input placeholder="密码" name="Password" type="password" required="" id="UsLogPass">	
+												<input placeholder="再次输入密码" name="Password2" type="password" required="" id="UsLogPass2">
+
 												<div class="sign-up">
-													<input type="submit" value="创建账户"/>
+                                                    <input type="submit" value="创建账户"/>
 												</div>
 											</form>
 										</div>
@@ -219,13 +220,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						</ul>
 					</li>
 					<li><a href="about.aspx">关于我们</a></li> 
-					<li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的 <span class="caret"></span></a>
+					<li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ><label runat="server" id="MyName">请登录</label><span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="Box.aspx">购物车</a></li>
 							<li><a href="order.aspx">查看订单</a></li>
 							<li><a href="buyed.aspx">已购买</a></li>
 							<li><a href="personal.aspx">个人信息</a></li>
-							<li><a href="index.aspx">安全退出</a></li>     
+							<li><a href="logout.aspx">安全退出</a></li>     
 						</ul>
 					</li>  
 					<li><a href="mail.aspx">留言</a></li>
