@@ -150,8 +150,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
 			<div class="search_form">
 				<form action="#" method="post">
-					<input type="text" name="Search" placeholder="Search...">
-					<input type="submit" value="Send">
+					<input type="text" name="Search" placeholder="输入产品名...">
+					<input type="submit" value="搜索">
 				</form>
 			</div>
 		</div>
@@ -327,7 +327,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<div class="col-md-8 w3ls_mobiles_grid_right">
 				<div class="col-md-6 w3ls_mobiles_grid_right_left">
 					<div class="w3ls_mobiles_grid_right_grid1">
-						<img src="../images/46.jpg" alt=" " class="img-responsive" />
+						<img src="../img/feilipu-cy-1.jpg" alt=" " class="img-responsive" />
 						<div class="w3ls_mobiles_grid_right_grid1_pos1">
 							<h3>抽烟机<span>降价</span> 50%！</h3>
 						</div>
@@ -335,7 +335,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</div>
 				<div class="col-md-6 w3ls_mobiles_grid_right_left">
 					<div class="w3ls_mobiles_grid_right_grid1">
-						<img src="../images/47.jpg" alt=" " class="img-responsive" />
+						<img src="../img/meidi-rq-3.jpg" alt=" " class="img-responsive" />
 						<div class="w3ls_mobiles_grid_right_grid1_pos">
 							<h3>客户最喜欢的<span>10种 </span>燃气灶品牌</h3>
 						</div>
@@ -344,9 +344,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="clearfix"> </div>
 
 				<div class="w3ls_mobiles_grid_right_grid2">
-					<div class="w3ls_mobiles_grid_right_grid2_left">
-						<h3>约找到<label class="" id="" >**</label>个</h3>
-					</div>
+					
 					<div class="w3ls_mobiles_grid_right_grid2_right">
 						<select name="select_item" class="select_item">
 							<option selected="selected">综合</option>
@@ -363,11 +361,10 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/31.jpg" alt=" " class="img-responsive" />
-								<img src="../images/30.jpg" alt=" " class="img-responsive" />
-								<img src="../images/27.jpg" alt=" " class="img-responsive" />
-								<img src="../images/28.jpg" alt=" " class="img-responsive" />
-								<img src="../images/29.jpg" alt=" " class="img-responsive" /> 
+								<img src="../img/meidi-db-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/meidi-db-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/meidi-db-3.jpg" alt=" " class="img-responsive" />
+								
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -395,11 +392,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/p1.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p2.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p3.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p4.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p1.jpg" alt=" " class="img-responsive" /> 
+								<img src="../img/haier-yl-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/haier-yl-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/haier-yl-3.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -424,11 +419,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/30.jpg" alt=" " class="img-responsive" />
-								<img src="../images/28.jpg" alt=" " class="img-responsive" />
-								<img src="../images/26.jpg" alt=" " class="img-responsive" />
-								<img src="../images/27.jpg" alt=" " class="img-responsive" />
-								<img src="../images/29.jpg" alt=" " class="img-responsive" /> 
+								<img src="../img/meidi-dc-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/meidi-dc-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/meidi-dc-3.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -456,11 +449,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/p4.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p1.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p3.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p2.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p5.jpg" alt=" " class="img-responsive" /> 
+								<img src="../img/geli-xw-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-xw-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-xw-3.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -485,11 +476,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/p5.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p1.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p2.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p4.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p3.jpg" alt=" " class="img-responsive" /> 
+								<img src="../img/feilipu-kx-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/feilipu-kx-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/feilipu-kx-3.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -514,11 +503,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/p6.jpg" alt=" " class="img-responsive" />
-								<img src="../images/26.jpg" alt=" " class="img-responsive" />
-								<img src="../images/31.jpg" alt=" " class="img-responsive" />
-								<img src="../images/22.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p6.jpg" alt=" " class="img-responsive" /> 
+								<img src="../img/geli-wb-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-wb-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-wb-3.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -549,11 +536,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/p3.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p5.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p4.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p2.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p1.jpg" alt=" " class="img-responsive" /> 
+								<img src="../img/meidi-mb-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/meidi-mb-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/meidi-mb-3.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -581,11 +566,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/31.jpg" alt=" " class="img-responsive" />
-								<img src="../images/30.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p6.jpg" alt=" " class="img-responsive" />
-								<img src="../images/26.jpg" alt=" " class="img-responsive" />
-								<img src="../images/29.jpg" alt=" " class="img-responsive" /> 
+								<img src="../img/geli-kf-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-kf-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-kf-3.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -610,11 +593,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/35.jpg" alt=" " class="img-responsive" />
-								<img src="../images/30.jpg" alt=" " class="img-responsive" />
-								<img src="../images/27.jpg" alt=" " class="img-responsive" />
-								<img src="../images/28.jpg" alt=" " class="img-responsive" />
-								<img src="../images/29.jpg" alt=" " class="img-responsive" /> 
+								<img src="../img/geli-sh-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-sh-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-sh-3.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -956,11 +937,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="w3l_related_products_grid">
 					<div class="agile_ecommerce_tab_left mobiles_grid">
 						<div class="hs-wrapper hs-wrapper3">
-							<img src="../images/34.jpg" alt=" " class="img-responsive" />
-							<img src="../images/35.jpg" alt=" " class="img-responsive" />
-							<img src="../images/27.jpg" alt=" " class="img-responsive" />
-							<img src="../images/28.jpg" alt=" " class="img-responsive" />
-							<img src="../images/37.jpg" alt=" " class="img-responsive" /> 
+							        <img src="../img/meidi-kt-1.jpg" alt=" " class="img-responsive" />
+									<img src="../img/meidi-kt-2.jpg" alt=" " class="img-responsive" />
+									<img src="../img/haier-kt-3.jpg" alt=" " class="img-responsive" />
+									<img src="../img/haier-kt-2.jpg" alt=" " class="img-responsive" />
+									<img src="../img/haier-kt-3.jpg" alt=" " class="img-responsive" />
 							<div class="w3_hs_bottom">
 								<div class="flex_ecommerce">
 									<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
@@ -985,11 +966,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="w3l_related_products_grid">
 					<div class="agile_ecommerce_tab_left mobiles_grid">
 						<div class="hs-wrapper hs-wrapper3">
-							<img src="../images/36.jpg" alt=" " class="img-responsive" />
-							<img src="../images/32.jpg" alt=" " class="img-responsive" />
-							<img src="../images/33.jpg" alt=" " class="img-responsive" />
-							<img src="../images/32.jpg" alt=" " class="img-responsive" />
-							<img src="../images/36.jpg" alt=" " class="img-responsive" /> 
+							<img src="../img/haier-xj-1.jpg" alt=" " class="img-responsive" />
+						<img src="../img/haier-xj-2.jpg" alt=" " class="img-responsive" />
+						<img src="../img/haier-xj-3.jpg" alt=" " class="img-responsive" />
+						<img src="../img/haier-xj-1.jpg" alt=" " class="img-responsive" />
+						<img src="../img/haier-xj-2.jpg" alt=" " class="img-responsive" />
 							<div class="w3_hs_bottom">
 								<div class="flex_ecommerce">
 									<a href="#" data-toggle="modal" data-target="#myModal5"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
@@ -1014,18 +995,19 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="w3l_related_products_grid">
 					<div class="agile_ecommerce_tab_left mobiles_grid">
 						<div class="hs-wrapper hs-wrapper3">
-							<img src="../images/38.jpg" alt=" " class="img-responsive" />
-							<img src="../images/37.jpg" alt=" " class="img-responsive" />
-							<img src="../images/27.jpg" alt=" " class="img-responsive" />
-							<img src="../images/28.jpg" alt=" " class="img-responsive" />
-							<img src="../images/37.jpg" alt=" " class="img-responsive" /> 
+							         <img src="../img/tcl-tv-1.jpg" alt=" " class="img-responsive" />
+									<img src="../img/tcl-tv-2.jpg" alt=" " class="img-responsive" />
+									<img src="../img/tcl-tv-3.jpg" alt=" " class="img-responsive" />
+									<img src="../img/xiaomi-tv-1.jpg" alt=" " class="img-responsive" />
+									<img src="../img/xiaomi-tv-2.jpg" alt=" " class="img-responsive" />
+									<img src="../img/xiaomi-tv-3.jpg" alt=" " class="img-responsive" /> 
 							<div class="w3_hs_bottom">
 								<div class="flex_ecommerce">
 									<a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
 								</div>
 							</div>
 						</div>
-						<h5><a href="single.aspx">智能扫地机</a></h5>
+						<h5><a href="single.aspx">液晶电视</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p class="flexisel_ecommerce_cart"><span>650￥</span> <i class="item_price">645￥</i></p>
 							<form action="#" method="post">
@@ -1043,18 +1025,18 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="w3l_related_products_grid">
 					<div class="agile_ecommerce_tab_left mobiles_grid">
 						<div class="hs-wrapper hs-wrapper3">
-							<img src="../images/p3.jpg" alt=" " class="img-responsive" />
-							<img src="../images/p5.jpg" alt=" " class="img-responsive" />
-							<img src="../images/p4.jpg" alt=" " class="img-responsive" />
-							<img src="../images/p2.jpg" alt=" " class="img-responsive" />
-							<img src="../images/p1.jpg" alt=" " class="img-responsive" /> 
+							<img src="../img/feilipu-cy-1.jpg" alt=" " class="img-responsive" />
+						<img src="../img/feilipu-cy-2.jpg" alt=" " class="img-responsive" />
+						<img src="../img/feilipu-cy-3.jpg" alt=" " class="img-responsive" />
+						<img src="../img/feilipu-cy-1.jpg" alt=" " class="img-responsive" />
+						<img src="../img/feilipu-cy-2.jpg" alt=" " class="img-responsive" /> 
 							<div class="w3_hs_bottom">
 								<div class="flex_ecommerce">
 									<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
 								</div>
 							</div>
 						</div>
-						<h5><a href="single.aspx">飞利浦音响</a></h5>
+						<h5><a href="single.aspx">飞利浦抽烟机</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p><span>60￥</span> <i class="item_price">58￥</i></p>
 							<form action="#" method="post">

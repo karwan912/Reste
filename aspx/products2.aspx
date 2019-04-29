@@ -152,7 +152,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
 			<div class="search_form">
 				<form action="#" method="post">
-					<input type="text" name="Search" placeholder="输入你喜欢的...">
+					<input type="text" name="Search" placeholder="输入产品名...">
 					<input type="submit" value="搜索">
 				</form>
 			</div>
@@ -239,7 +239,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- banner -->
 <div class="banner banner1">
 	<div class="container">
-		<h2>厨房电器 <span>全网最低价</span> 全场 <i>半价！！！</i></h2> 
+		<h2>生活电器 <span>全网最低价</span> 全场 <i>半价！！！</i></h2> 
 	</div>
 </div> 
 <!-- breadcrumbs -->
@@ -272,10 +272,10 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 									<div class="panel-body panel_text">
 										<ul>
-											<li><a href="products.aspx">抽烟机</a></li>
-											<li><a href="products1.aspx">燃气灶</a></li>
-											<li><a href="products2.aspx">洗碗机</a></li>
-											<li><a href="products.aspx">微波驴</a></li>
+											<li><a href="products.aspx">液晶电视</a></li>
+											<li><a href="products1.aspx">空调</a></li>
+											<li><a href="products2.aspx">单反相机</a></li>
+											<li><a href="products.aspx">冰箱</a></li>
 											<li><a href="products2.aspx">烤箱</a></li>
 										</ul>
 									</div>
@@ -292,11 +292,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 									<div class="panel-body panel_text">
 										<ul>
-											<li><a href="products2.aspx">抽烟机</a></li>
-											<li><a href="products2.aspx">燃气灶</a></li>
-											<li><a href="products2.aspx">洗碗机</a></li>
-											<li><a href="products2.aspx">微波炉</a></li>
+											<li><a href="products2.aspx">单反相机</a></li>
+											<li><a href="products2.aspx">液晶电视</a></li>
 											<li><a href="products2.aspx">烤箱</a></li>
+											<li><a href="products2.aspx">空调</a></li>
+											<li><a href="products2.aspx">冰箱</a></li>
 										</ul>
 									</div>
 								</div>
@@ -329,26 +329,24 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<div class="col-md-8 w3ls_mobiles_grid_right">
 				<div class="col-md-6 w3ls_mobiles_grid_right_left">
 					<div class="w3ls_mobiles_grid_right_grid1">
-						<img src="../images/46.jpg" alt=" " class="img-responsive" />
+						<img src="../img/jianeng-df-2.jpg" alt=" " class="img-responsive" />
 						<div class="w3ls_mobiles_grid_right_grid1_pos1">
-							<h3>抽烟机<span>降价</span> 50%！</h3>
+							<h3>单反<span>降价</span> 50%！</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 w3ls_mobiles_grid_right_left">
 					<div class="w3ls_mobiles_grid_right_grid1">
-						<img src="../images/47.jpg" alt=" " class="img-responsive" />
+						<img src="../img/haier-tv-2.jpg" alt=" " class="img-responsive" />
 						<div class="w3ls_mobiles_grid_right_grid1_pos">
-							<h3>客户最喜欢的<span>10种 </span>燃气灶品牌</h3>
+							<h3>客户最喜欢的<span>10种 </span>液晶电视品牌</h3>
 						</div>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
 
 				<div class="w3ls_mobiles_grid_right_grid2">
-					<div class="w3ls_mobiles_grid_right_grid2_left">
-						<h3>约找到<label class="" id="" >**</label>个</h3>
-					</div>
+					
 					<div class="w3ls_mobiles_grid_right_grid2_right">
 						<select name="select_item" class="select_item">
 							<option selected="selected">综合</option>
@@ -365,11 +363,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/31.jpg" alt=" " class="img-responsive" />
-								<img src="../images/30.jpg" alt=" " class="img-responsive" />
-								<img src="../images/27.jpg" alt=" " class="img-responsive" />
-								<img src="../images/28.jpg" alt=" " class="img-responsive" />
-								<img src="../images/29.jpg" alt=" " class="img-responsive" /> 
+								    <img src="../img/tcl-tv-1.jpg" alt=" " class="img-responsive" />
+									<img src="../img/tcl-tv-2.jpg" alt=" " class="img-responsive" />
+									<img src="../img/tcl-tv-3.jpg" alt=" " class="img-responsive" />
+									<img src="../img/tcl-tv-1.jpg" alt=" " class="img-responsive" />
+									<img src="../img/tcl-tv-2.jpg" alt=" " class="img-responsive" />
+									
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -378,7 +377,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">格力电饭煲</a></h5> 
+							<h5><a href="single.aspx">TCL液晶电视</a></h5> 
 							<div class="simpleCart_shelfItem">
 								<p><span>250￥</span> <i class="item_price">245￥</i></p>
 								<form action="#" method="post">
@@ -397,11 +396,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/p1.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p2.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p3.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p4.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p1.jpg" alt=" " class="img-responsive" /> 
+								<img src="../img/jianeng-df-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/jianeng-df-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/jianeng-df-3.jpg" alt=" " class="img-responsive" />
+								<img src="../img/jianeng-df-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/jianeng-df-2.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -410,7 +409,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">美的压力锅</a></h5>
+							<h5><a href="single.aspx">佳能单反相机</a></h5>
 							<div class="simpleCart_shelfItem">
 								<p><span>50￥</span> <i class="item_price">45￥</i></p>
 								<form action="#" method="post">
@@ -426,11 +425,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/30.jpg" alt=" " class="img-responsive" />
-								<img src="../images/28.jpg" alt=" " class="img-responsive" />
-								<img src="../images/26.jpg" alt=" " class="img-responsive" />
-								<img src="../images/27.jpg" alt=" " class="img-responsive" />
-								<img src="../images/29.jpg" alt=" " class="img-responsive" /> 
+							        <img src="../img/tcl-bx-1.jpg" alt=" " class="img-responsive" />
+									<img src="../img/tcl-bx-2.jpg" alt=" " class="img-responsive" />
+									<img src="../img/tcl-bx-3.jpg" alt=" " class="img-responsive" />
+									<img src="../img/tcl-bx-1.jpg" alt=" " class="img-responsive" />
+									<img src="../img/tcl-bx-2.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -439,7 +438,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">海尔电磁炉</a></h5>
+							<h5><a href="single.aspx">海尔冰箱</a></h5>
 							<div class="simpleCart_shelfItem">
 								<p><span>80￥</span> <i class="item_price">65￥</i></p>
 								<form action="#" method="post">
@@ -458,11 +457,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/p4.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p1.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p3.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p2.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p5.jpg" alt=" " class="img-responsive" /> 
+								<img src="../img/geli-kt-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-kt-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-kt-3.jpg" alt=" " class="img-responsive" />
+                                <img src="../img/geli-kt-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-kt-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-kt-3.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -471,7 +471,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">美的洗碗机</a></h5>
+							<h5><a href="single.aspx">格力空调</a></h5>
 							<div class="simpleCart_shelfItem">
 								<p><span>250￥</span> <i class="item_price">245￥</i></p>
 								<form action="#" method="post">
@@ -487,11 +487,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/p5.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p1.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p2.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p4.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p3.jpg" alt=" " class="img-responsive" /> 
+								    <img src="../img/xiaomi-tv-1.jpg" alt=" " class="img-responsive" />
+									<img src="../img/xiaomi-tv-2.jpg" alt=" " class="img-responsive" />
+									<img src="../img/xiaomi-tv-3.jpg" alt=" " class="img-responsive" />
+                                    <img src="../img/xiaomi-tv-1.jpg" alt=" " class="img-responsive" />
+									<img src="../img/xiaomi-tv-2.jpg" alt=" " class="img-responsive" />
+									<img src="../img/xiaomi-tv-3.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -500,7 +501,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">海尔烤箱</a></h5>
+							<h5><a href="single.aspx">小米智能电视</a></h5>
 							<div class="simpleCart_shelfItem">
 								<p><span>100￥</span> <i class="item_price">86￥</i></p>
 								<form action="#" method="post">
@@ -516,11 +517,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/p6.jpg" alt=" " class="img-responsive" />
-								<img src="../images/26.jpg" alt=" " class="img-responsive" />
-								<img src="../images/31.jpg" alt=" " class="img-responsive" />
-								<img src="../images/22.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p6.jpg" alt=" " class="img-responsive" /> 
+						<img src="../img/haier-kt-1.jpg" alt=" " class="img-responsive" />
+						<img src="../img/haier-kt-2.jpg" alt=" " class="img-responsive" />
+						<img src="../img/haier-kt-3.jpg" alt=" " class="img-responsive" />
+						<img src="../img/haier-kt-1.jpg" alt=" " class="img-responsive" />
+						<img src="../img/haier-kt-2.jpg" alt=" " class="img-responsive" /> 
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -529,7 +530,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">飞利普微波炉</a></h5>
+							<h5><a href="single.aspx">海尔空调</a></h5>
 							<div class="simpleCart_shelfItem">
 								<p><span>450￥</span> <i class="item_price">425￥</i></p>
 								<form action="#" method="post">
@@ -551,11 +552,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/p3.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p5.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p4.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p2.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p1.jpg" alt=" " class="img-responsive" /> 
+								    <img src="../img/jianeng-bx-1.jpg" alt=" " class="img-responsive" />
+									<img src="../img/jianeng-bx-2.jpg" alt=" " class="img-responsive" />
+									<img src="../img/jianeng-bx-3.jpg" alt=" " class="img-responsive" />
+                                    <img src="../img/jianeng-bx-1.jpg" alt=" " class="img-responsive" />
+									<img src="../img/jianeng-bx-2.jpg" alt=" " class="img-responsive" />
+									<img src="../img/jianeng-bx-3.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -564,7 +566,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">海尔面包机</a></h5>
+							<h5><a href="single.aspx">佳能冰箱</a></h5>
 							<div class="simpleCart_shelfItem">
 								<p><span>60￥</span> <i class="item_price">58￥</i></p>
 								<form action="#" method="post">
@@ -583,11 +585,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/31.jpg" alt=" " class="img-responsive" />
-								<img src="../images/30.jpg" alt=" " class="img-responsive" />
-								<img src="../images/p6.jpg" alt=" " class="img-responsive" />
-								<img src="../images/26.jpg" alt=" " class="img-responsive" />
-								<img src="../images/29.jpg" alt=" " class="img-responsive" /> 
+								<img src="../img/geli-wb-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-wb-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-wb-3.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-wb-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-wb-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-wb-3.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -596,7 +599,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">美的咖啡机</a></h5>
+							<h5><a href="single.aspx">格力微波炉</a></h5>
 							<div class="simpleCart_shelfItem">
 								<p><span>650￥</span> <i class="item_price">550￥</i></p>
 								<form action="#" method="post">
@@ -612,11 +615,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_mobiles">
 						<div class="agile_ecommerce_tab_left mobiles_grid">
 							<div class="hs-wrapper hs-wrapper2">
-								<img src="../images/35.jpg" alt=" " class="img-responsive" />
-								<img src="../images/30.jpg" alt=" " class="img-responsive" />
-								<img src="../images/27.jpg" alt=" " class="img-responsive" />
-								<img src="../images/28.jpg" alt=" " class="img-responsive" />
-								<img src="../images/29.jpg" alt=" " class="img-responsive" /> 
+								<img src="../img/geli-sh-1.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-sh-2.jpg" alt=" " class="img-responsive" />
+                                <img src="../img/geli-sh-3.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-sh-1.jpg" alt=" " class="img-responsive" />
+                                <img src="../img/geli-sh-2.jpg" alt=" " class="img-responsive" />
+								<img src="../img/geli-sh-3.jpg" alt=" " class="img-responsive" />
 								<div class="w3_hs_bottom w3_hs_bottom_sub1">
 									<ul>
 										<li>
@@ -625,7 +629,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">美的电子水浒</a></h5>
+							<h5><a href="single.aspx">格力电子水浒</a></h5>
 							<div class="simpleCart_shelfItem">
 								<p><span>250￥</span> <i class="item_price">210￥</i></p>
 								<form action="#" method="post">
@@ -958,11 +962,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="w3l_related_products_grid">
 					<div class="agile_ecommerce_tab_left mobiles_grid">
 						<div class="hs-wrapper hs-wrapper3">
-							<img src="../images/34.jpg" alt=" " class="img-responsive" />
-							<img src="../images/35.jpg" alt=" " class="img-responsive" />
-							<img src="../images/27.jpg" alt=" " class="img-responsive" />
-							<img src="../images/28.jpg" alt=" " class="img-responsive" />
-							<img src="../images/37.jpg" alt=" " class="img-responsive" /> 
+							        <img src="../img/meidi-kt-1.jpg" alt=" " class="img-responsive" />
+									<img src="../img/meidi-kt-2.jpg" alt=" " class="img-responsive" />
+									<img src="../img/haier-kt-3.jpg" alt=" " class="img-responsive" />
+									<img src="../img/haier-kt-2.jpg" alt=" " class="img-responsive" />
+									<img src="../img/haier-kt-3.jpg" alt=" " class="img-responsive" />
 							<div class="w3_hs_bottom">
 								<div class="flex_ecommerce">
 									<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
@@ -987,11 +991,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="w3l_related_products_grid">
 					<div class="agile_ecommerce_tab_left mobiles_grid">
 						<div class="hs-wrapper hs-wrapper3">
-							<img src="../images/36.jpg" alt=" " class="img-responsive" />
-							<img src="../images/32.jpg" alt=" " class="img-responsive" />
-							<img src="../images/33.jpg" alt=" " class="img-responsive" />
-							<img src="../images/32.jpg" alt=" " class="img-responsive" />
-							<img src="../images/36.jpg" alt=" " class="img-responsive" /> 
+							<img src="../img/haier-xj-1.jpg" alt=" " class="img-responsive" />
+						<img src="../img/haier-xj-2.jpg" alt=" " class="img-responsive" />
+						<img src="../img/haier-xj-3.jpg" alt=" " class="img-responsive" />
+						<img src="../img/haier-xj-1.jpg" alt=" " class="img-responsive" />
+						<img src="../img/haier-xj-2.jpg" alt=" " class="img-responsive" />
 							<div class="w3_hs_bottom">
 								<div class="flex_ecommerce">
 									<a href="#" data-toggle="modal" data-target="#myModal5"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
@@ -1016,18 +1020,19 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="w3l_related_products_grid">
 					<div class="agile_ecommerce_tab_left mobiles_grid">
 						<div class="hs-wrapper hs-wrapper3">
-							<img src="../images/38.jpg" alt=" " class="img-responsive" />
-							<img src="../images/37.jpg" alt=" " class="img-responsive" />
-							<img src="../images/27.jpg" alt=" " class="img-responsive" />
-							<img src="../images/28.jpg" alt=" " class="img-responsive" />
-							<img src="../images/37.jpg" alt=" " class="img-responsive" /> 
+							         <img src="../img/tcl-tv-1.jpg" alt=" " class="img-responsive" />
+									<img src="../img/tcl-tv-2.jpg" alt=" " class="img-responsive" />
+									<img src="../img/tcl-tv-3.jpg" alt=" " class="img-responsive" />
+									<img src="../img/xiaomi-tv-1.jpg" alt=" " class="img-responsive" />
+									<img src="../img/xiaomi-tv-2.jpg" alt=" " class="img-responsive" />
+									<img src="../img/xiaomi-tv-3.jpg" alt=" " class="img-responsive" /> 
 							<div class="w3_hs_bottom">
 								<div class="flex_ecommerce">
 									<a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
 								</div>
 							</div>
 						</div>
-						<h5><a href="single.aspx">智能扫地机</a></h5>
+						<h5><a href="single.aspx">液晶电视</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p class="flexisel_ecommerce_cart"><span>650￥</span> <i class="item_price">645￥</i></p>
 							<form action="#" method="post">
@@ -1045,18 +1050,18 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="w3l_related_products_grid">
 					<div class="agile_ecommerce_tab_left mobiles_grid">
 						<div class="hs-wrapper hs-wrapper3">
-							<img src="../images/p3.jpg" alt=" " class="img-responsive" />
-							<img src="../images/p5.jpg" alt=" " class="img-responsive" />
-							<img src="../images/p4.jpg" alt=" " class="img-responsive" />
-							<img src="../images/p2.jpg" alt=" " class="img-responsive" />
-							<img src="../images/p1.jpg" alt=" " class="img-responsive" /> 
+							<img src="../img/feilipu-cy-1.jpg" alt=" " class="img-responsive" />
+						<img src="../img/feilipu-cy-2.jpg" alt=" " class="img-responsive" />
+						<img src="../img/feilipu-cy-3.jpg" alt=" " class="img-responsive" />
+						<img src="../img/feilipu-cy-1.jpg" alt=" " class="img-responsive" />
+						<img src="../img/feilipu-cy-2.jpg" alt=" " class="img-responsive" /> 
 							<div class="w3_hs_bottom">
 								<div class="flex_ecommerce">
 									<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
 								</div>
 							</div>
 						</div>
-						<h5><a href="single.aspx">飞利浦音响</a></h5>
+						<h5><a href="single.aspx">飞利浦抽烟机</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p><span>60￥</span> <i class="item_price">58￥</i></p>
 							<form action="#" method="post">
