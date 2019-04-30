@@ -266,7 +266,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						    <div class="col-lg">
 							    <div class="input-group ">
 								    <span class="input-group-addon">产品编号</span>
-							    	<input type="text" class="form-control"  id="ProductID" placeholder="请输入产品编号..." >
+							    	<input type="text" class="form-control"  id="ProductID" name="ProductID" placeholder="请输入产品编号..." >
 								
 							    </div><!-- /input-group -->
 						    </div><!-- /.col-lg-6 -->
@@ -276,7 +276,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						    <div class="col-lg">
 							    <div class="input-group ">
 								    <span class="input-group-addon">产品价格</span>
-							    	<input type="text" class="form-control"  id="ProductPrice" placeholder="请输入价格..." >
+							    	<input type="text" class="form-control"  id="ProductPrice" name="ProductPrice" placeholder="请输入价格..." >
 								
 							    </div><!-- /input-group -->
 						    </div><!-- /.col-lg-6 -->
@@ -287,7 +287,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						    <div class="col-lg">
 							    <div class="input-group ">
 								    <span class="input-group-addon">产品名称</span>
-							    	<input type="text" class="form-control"  id="ProductName" placeholder="请输入产品名称..." >
+							    	<input type="text" class="form-control"  id="ProductName" name="ProductName" placeholder="请输入产品名称..." >
 								
 							    </div><!-- /input-group -->
 						    </div><!-- /.col-lg-6 -->
@@ -301,7 +301,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						    <div class="col-lg">
 							    <div class="input-group ">
 								    <span class="input-group-addon">产品库存</span>
-							    	<input type="text" class="form-control"  id="ProductStock" placeholder="请输入产品库存..." >
+							    	<input type="text" class="form-control"  id="ProductStock" name="ProductStock" placeholder="请输入产品库存..." >
 								
 							    </div><!-- /input-group -->
 						    </div><!-- /.col-lg-6 -->
@@ -309,49 +309,41 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 
 
-                        <div class="divstyle ">
-						    <div class="col-lg">
-							    <div class="input-group ">
-								    <span class="input-group-addon">产品生产日期</span>
-							    	<input type="text" class="form-control"  id="Productdate" placeholder="请输入产品生产日期..." >
-								
-							    </div><!-- /input-group -->
-						    </div><!-- /.col-lg-6 -->
-					    </div>
+                        
                         
 
                         <div class="divstyle ">
 						    <div class="col-lg">
 							    <div class="input-group ">
 								    <span class="input-group-addon">产品类型</span>
-							    	<input type="text" class="form-control"  id="ProductClass" placeholder="请输入产品类型..." >
+							    	<input type="text" class="form-control"  id="ProductClass" name="ProductClass" placeholder="请输入产品类型..." >
 								
 							    </div><!-- /input-group -->
 						    </div><!-- /.col-lg-6 -->
 					    </div>
-
-
+                       
+                     
                         <div class="divstyle ">
                             <label>上传图片：
-						   <input type="file" name="更换照片" class="upfile" value="更换照片" id="Productphoto">
+						   <input type="file" name="Productphoto" class="upfile" value="更换照片" id="Productphoto">
                                 </label>
 					    </div>
-
+                     
                         
 							<div class="form-group">
 								<label for="comment">	产品描述：</label>
-								<textarea class="form-control" rows="3" id="Productexplain"></textarea>
+								<textarea class="form-control" rows="3" id="Productexplain" name="Productexplain"></textarea>
 							</div>
 
                         
 							<div class="form-group">
 								<label for="comment">	产品参数：</label>
-								<textarea class="form-control" rows="7" id="Productparameter"></textarea>
+								<textarea class="form-control" rows="7" id="Productparameter" name="Productparameter"></textarea>
 							</div>
 
 
                         <div class="divstyle">
-					    	<input type="submit" name="提交" class="btn btn-success" id="submit1">
+					    	<input type="submit" name="提交"  class="btn btn-success" id="submit1">
 					    </div>
 
 

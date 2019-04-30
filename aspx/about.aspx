@@ -271,7 +271,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="clearfix"> </div>
 			</div>
 			<div class="col-md-6 w3ls_about_grid_right">
-				<img src="../images/52.jpg" alt=" " class="img-responsive" />
+				<img src="../img/about-img.jpg" alt=" " class="img-responsive" />
 			</div>
 			<div class="clearfix"> </div>
 		</div>
@@ -284,23 +284,23 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<h3>我们的团队</h3>
 		<div class="wthree_team_grids">
 			<div class="col-md-3 wthree_team_grid">
-				<img src="../images/t4.png" alt=" " class="img-responsive" />
-				<h4>AlimjanYasin <span>总裁</span></h4>
+				<img src="../img/touxiang.jpg" alt=" " class="img-responsive img-touxiang" />
+				<h4>Alimjan <span>总裁</span></h4>
 				
 			</div>
 			<div class="col-md-3 wthree_team_grid">
-				<img src="../images/t5.png" alt=" " class="img-responsive" />
-				<h4>Aygul Ysin<span>总经理</span></h4>
+				<img src="../img/touxiang.jpg" alt=" " class="img-responsive img-touxiang" />
+				<h4>Ysin<span>总经理</span></h4>
 				
 			</div>
 			<div class="col-md-3 wthree_team_grid">
-				<img src="../images/t6.png" alt=" " class="img-responsive" />
-				<h4>Nuriman Yasin <span>财务总监</span></h4>
+				<img src="../img/touxiang.jpg" alt=" " class="img-responsive img-touxiang" />
+				<h4>Tahir<span>财务总监</span></h4>
 				
 			</div>
 			<div class="col-md-3 wthree_team_grid">
-				<img src="../images/t7.png" alt=" " class="img-responsive" />
-				<h4> Emran Nur<span>技术总监</span></h4>
+				<img src="../img/touxiang.jpg" alt=" " class="img-responsive img-touxiang " />
+				<h4>Talip<span>技术总监</span></h4>
 				
 			</div>
 			<div class="clearfix"> </div>
