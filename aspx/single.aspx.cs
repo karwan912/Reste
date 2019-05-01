@@ -24,5 +24,58 @@ public partial class aspx_single : System.Web.UI.Page
             string s = Session["Usernm"].ToString(); ;
             MyName.InnerText = s;
         }
+
+        if (Request.Cookies["ProductId"] != null) {
+            string proid = Request.Cookies["ProductId"].Value;//从cookie获取的id
+
+            string mysqlstr = System.Configuration.ConfigurationManager.ConnectionStrings["SqlConnStr"].ConnectionString;
+            OleDbConnection conn = new OleDbConnection(mysqlstr);
+            OleDbCommand cmd;
+            OleDbDataReader datar;
+
+            string selectsql = "select * from Product where ProductID='" + proid + "' ";
+            conn.Open();
+            cmd = new OleDbCommand(selectsql, conn);
+
+            try
+            {
+                datar = cmd.ExecuteReader();
+                if (datar.Read())
+                {
+                    string  proprice = datar["ProductPrice"].ToString();
+                    string proname = datar["ProductName"].ToString();
+                    string prex = datar["Productexplain"].ToString();
+                    string prpt = datar["ProductPhoto"].ToString();
+                    string prpr = datar["ProductParameter"].ToString();
+
+                    ProName.InnerText = proname;
+                    ProEx.InnerText = prex;
+                    ProEx1.InnerText = prex;
+                    prifake.InnerText = proprice + 20;
+                    pritrue.InnerText = proprice;
+                    ProPR.InnerText = prpr;
+                 
+
+                }
+                else
+                {
+                    Response.Write("<script language=javascript>alert('没有查询到相应产品！');</script>");
+                    
+
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Response.Write("应该是sql 查询语句出错！");
+            }
+
+
+            conn.Close();
+
+        }
+
+
     }
 }

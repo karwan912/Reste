@@ -53,7 +53,22 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //end-smooth-scrolling --> 
 </head> 
 <body>
-   
+    <script type="text/javascript">
+        function addCookie(e) {
+
+            if (!e) {
+                var e = window.event;
+            }
+            //获取事件点击元素
+            var targ = e.target;
+            //获取元素名称
+            var tid = targ.id;
+            document.cookie = "ProductId=;"
+            document.cookie = "ProductId=" + tid + "";
+            
+            
+        }
+    </script>
 	<!-- for bootstrap working -->
 	<script type="text/javascript" src="../js/bootstrap-3.1.1.min.js"></script>
 	<!-- //for bootstrap working -->
@@ -297,7 +312,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div id="myTabContent" class="tab-content">
 					<div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
 						<div class="agile_ecommerce_tabs">
-							<div class="col-md-4 agile_ecommerce_tab_left">
+							<div class="col-md-4 agile_ecommerce_tab_left" >
 								<div class="hs-wrapper">
 									<img src="../img/tcl-tv-1.jpg" alt=" " class="img-responsive" />
 									<img src="../img/tcl-tv-2.jpg" alt=" " class="img-responsive" />
@@ -315,7 +330,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 										</ul>
 									</div>
 								</div> 
-								<h5><a href="single.aspx" >TCL液晶电视</a></h5>
+								<h5><a   onclick="addCookie();" href="single.aspx"  id="1" >TCL液晶电视</a> </h5>
 								<div class="simpleCart_shelfItem">
 									<p><span>380￥</span> <i class="item_price">350￥</i></p>
 									<form action="#" method="post">
@@ -323,7 +338,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 										<input type="hidden" name="add" value="1" /> 
 										<input type="hidden" name="w3ls_item" value="TCL液晶电视" /> 
 										<input type="hidden" name="amount" value="350.00" />   
-										<button type="submit"  class="w3ls-cart">加入购物车</button>
+										<button type="submit"   class="w3ls-cart">加入购物车</button>
 									</form>  
 								</div>
 							</div>
@@ -345,7 +360,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 										</ul>
 									</div>
 								</div>
-								<h5><a href="single.aspx">海尔电视</a></h5>
+								<h5><a href="single.aspx" onclick="addCookie();" id="666">海尔电视</a></h5>
 								<div class="simpleCart_shelfItem">
 									<p><span>330￥</span> <i class="item_price">302￥</i></p>
 									<form action="#" method="post">
