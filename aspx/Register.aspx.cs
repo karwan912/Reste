@@ -68,6 +68,7 @@ public partial class aspx_Register : System.Web.UI.Page
                 conn.Close();
 
                 Session["Usernm"] = usnm;
+                Session["Userid"] = id;
 
                 Response.Redirect("index.aspx");
 

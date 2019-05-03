@@ -11,6 +11,7 @@ using System.Collections;
 using System.Web.Security;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
+using System.Text;
 public partial class aspx_single : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
@@ -48,20 +49,38 @@ public partial class aspx_single : System.Web.UI.Page
                     string prpt = datar["ProductPhoto"].ToString();
                     string prpr = datar["ProductParameter"].ToString();
 
+                    int fakeprice = int.Parse(proprice) + 200;
                     ProName.InnerText = proname;
                     ProEx.InnerText = prex;
                     ProEx1.InnerText = prex;
-                    prifake.InnerText = proprice + 20;
-                    pritrue.InnerText = proprice;
+                    prifake.InnerText = fakeprice + "￥";
+                    pritrue.InnerText = proprice+"￥";
                     ProPR.InnerText = prpr;
-                 
+
+                    Photo1a.Attributes.Add("data-thumb", prpt.Trim());
+                    Photo1b.Src = prpt.Trim();
+                      string temp = prpt;
+
+                      string prpt2 = temp.Replace(temp[temp.Length-5],'2');
+                      string prpt3 = temp.Replace(temp[temp.Length - 5], '3');
+                       
+
+
+
+                          Photo2a.Attributes.Add("data-thumb", prpt2.Trim());
+                          Photo2b.Src = prpt2.Trim();
+
+                          Photo3a.Attributes.Add("data-thumb", prpt3.Trim());
+                          Photo3b.Src = prpt3.Trim();
+                   
+                   
+                  
 
                 }
                 else
                 {
                     Response.Write("<script language=javascript>alert('没有查询到相应产品！');</script>");
                     
-
 
                 }
 

@@ -52,6 +52,26 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //end-smooth-scrolling --> 
 </head> 
 <body> 
+
+
+    <script type="text/javascript">
+        function addCookie(e) {
+
+            if (!e) {
+                var e = window.event;
+            }
+            //获取事件点击元素
+            var targ = e.target;
+            //获取元素名称
+            var tid = targ.id;
+            document.cookie = "ProductId=;"
+            document.cookie = "ProductId=" + tid + "";
+
+
+        }
+    </script>
+
+
 	<!-- header modal -->
 	<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
 	aria-hidden="true">
@@ -377,14 +397,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">飞利浦热水器</a></h5> 
+							<h5><a href="single.aspx" onclick="addCookie();" id="4">飞利浦热水器</a></h5> 
 							<div class="simpleCart_shelfItem">
-								<p><span>250￥</span> <i class="item_price">245￥</i></p>
-								<form action="#" method="post">
+								<p><span>799￥</span> <i class="item_price">599￥</i></p>
+								<form action="InsertBox.aspx" method="post">
+                                    <input type="hidden" name="PrID" value="4" />
 									<input type="hidden" name="cmd" value="_cart" />
 									<input type="hidden" name="add" value="1" /> 
 									<input type="hidden" name="w3ls_item" value="格力电饭煲" /> 
-									<input type="hidden" name="amount" value="245.00"/>   
+									<input type="hidden" name="amount" value="599.00"/>   
 									<button type="submit" class="w3ls-cart">加入购物车</button>
 								</form>
 							</div> 
@@ -410,14 +431,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">海尔吹风机</a></h5>
+							<h5><a href="single.aspx" onclick="addCookie();" id="17">海尔吹风机</a></h5>
 							<div class="simpleCart_shelfItem">
-								<p><span>50￥</span> <i class="item_price">45￥</i></p>
-								<form action="#" method="post">
+								<p><span>299￥</span> <i class="item_price">99￥</i></p>
+								<form action="InsertBox.aspx" method="post">
+                                    <input type="hidden" name="PrID" value="17" />
 									<input type="hidden" name="cmd" value="_cart" />
 									<input type="hidden" name="add" value="1" /> 
 									<input type="hidden" name="w3ls_item" value="海尔吹风机" /> 
-									<input type="hidden" name="amount" value="45.00"/>   
+									<input type="hidden" name="amount" value="99.00"/>   
 									<button type="submit" class="w3ls-cart">加入购物车</button>
 								</form>
 							</div> 
@@ -440,14 +462,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">美的马桶</a></h5>
+							<h5><a href="single.aspx" onclick="addCookie();" id="18">美的马桶</a></h5>
 							<div class="simpleCart_shelfItem">
-								<p><span>80￥</span> <i class="item_price">65￥</i></p>
-								<form action="#" method="post">
+								<p><span>1499￥</span> <i class="item_price">1299￥</i></p>
+								<form action="InsertBox.aspx" method="post">
+                                    <input type="hidden" name="PrID" value="18" />
 									<input type="hidden" name="cmd" value="_cart" />
 									<input type="hidden" name="add" value="1" /> 
 									<input type="hidden" name="w3ls_item" value="美的马桶" /> 
-									<input type="hidden" name="amount" value="65.00"/>   
+									<input type="hidden" name="amount" value="1299.00"/>   
 									<button type="submit" class="w3ls-cart">加入购物车</button>
 								</form>
 							</div> 
@@ -473,14 +496,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">海尔洗衣机</a></h5>
+							<h5><a href="single.aspx" onclick="addCookie();" id="6">海尔洗衣机</a></h5>
 							<div class="simpleCart_shelfItem">
-								<p><span>250￥</span> <i class="item_price">245￥</i></p>
-								<form action="#" method="post">
+								<p><span>2599￥</span> <i class="item_price">2399￥</i></p>
+								<form action="InsertBox.aspx" method="post">
+                                    <input type="hidden" name="PrID" value="6" />
 									<input type="hidden" name="cmd" value="_cart" />
 									<input type="hidden" name="add" value="1" /> 
 									<input type="hidden" name="w3ls_item" value="海尔洗衣机"/> 
-									<input type="hidden" name="amount" value="245.00"/>   
+									<input type="hidden" name="amount" value="2399.00"/>   
 									<button type="submit" class="w3ls-cart">加入购物车</button>
 								</form>
 							</div> 
@@ -503,14 +527,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">飞利浦热水器</a></h5>
+							<h5><a href="single.aspx" onclick="addCookie();" id="4">飞利浦热水器</a></h5>
 							<div class="simpleCart_shelfItem">
-								<p><span>100￥</span> <i class="item_price">86￥</i></p>
-								<form action="#" method="post">
+								<p><span>799￥</span> <i class="item_price">599￥</i></p>
+								<form action="InsertBox.aspx" method="post">
+                                    <input type="hidden" name="PrID" value="4" />
 									<input type="hidden" name="cmd" value="_cart" />
 									<input type="hidden" name="add" value="1" /> 
 									<input type="hidden" name="w3ls_item" value="飞利浦热水器" /> 
-									<input type="hidden" name="amount" value="86.00"/>   
+									<input type="hidden" name="amount" value="599.00"/>   
 									<button type="submit" class="w3ls-cart">加入购物车</button>
 								</form>
 							</div> 
@@ -533,14 +558,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">海尔吹风机</a></h5>
+							<h5><a href="single.aspx" onclick="addCookie();" id="17">海尔吹风机</a></h5>
 							<div class="simpleCart_shelfItem">
-								<p><span>450￥</span> <i class="item_price">425￥</i></p>
-								<form action="#" method="post">
+								<p><span>299￥</span> <i class="item_price">99￥</i></p>
+								<form action="InsertBox.aspx" method="post">
+                                    <input type="hidden" name="PrID" value="17" />
 									<input type="hidden" name="cmd" value="_cart" />
 									<input type="hidden" name="add" value="1" /> 
 									<input type="hidden" name="w3ls_item" value="海尔吹风机" /> 
-									<input type="hidden" name="amount" value="425.00"/>   
+									<input type="hidden" name="amount" value="99.00"/>   
 									<button type="submit" class="w3ls-cart">加入购物车</button>
 								</form>
 							</div> 
@@ -569,14 +595,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">美的新款马桶</a></h5>
+							<h5><a href="single.aspx" onclick="addCookie();" id="18">美的新款马桶</a></h5>
 							<div class="simpleCart_shelfItem">
-								<p><span>60￥</span> <i class="item_price">58￥</i></p>
-								<form action="#" method="post">
+								<p><span>1499￥</span> <i class="item_price">1299￥</i></p>
+								<form action="InsertBox.aspx" method="post">
+                                    <input type="hidden" name="PrID" value="18" />
 									<input type="hidden" name="cmd" value="_cart" />
 									<input type="hidden" name="add" value="1" /> 
 									<input type="hidden" name="w3ls_item" value="美的新款马桶" /> 
-									<input type="hidden" name="amount" value="58.00"/>   
+									<input type="hidden" name="amount" value="1299.00"/>   
 									<button type="submit" class="w3ls-cart">加入购物车</button>
 								</form>
 							</div> 
@@ -602,14 +629,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">海尔全自动洗衣机</a></h5>
+							<h5><a href="single.aspx" onclick="addCookie();" id="6">海尔全自动洗衣机</a></h5>
 							<div class="simpleCart_shelfItem">
-								<p><span>650￥</span> <i class="item_price">550￥</i></p>
-								<form action="#" method="post">
+								<p><span>2599￥</span> <i class="item_price">2399￥</i></p>
+								<form action="InsertBox.aspx" method="post">
+                                    <input type="hidden" name="PrID" value="6" />
 									<input type="hidden" name="cmd" value="_cart" />
 									<input type="hidden" name="add" value="1" /> 
 									<input type="hidden" name="w3ls_item" value="海尔全自动洗衣机" /> 
-									<input type="hidden" name="amount" value="550.00"/>   
+									<input type="hidden" name="amount" value="2399.00"/>   
 									<button type="submit" class="w3ls-cart">加入购物车</button>
 								</form>
 							</div> 
@@ -632,14 +660,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</ul>
 								</div>
 							</div>
-							<h5><a href="single.aspx">飞利浦热水器</a></h5>
+							<h5><a href="single.aspx" onclick="addCookie();" id="4">飞利浦热水器</a></h5>
 							<div class="simpleCart_shelfItem">
-								<p><span>250￥</span> <i class="item_price">210￥</i></p>
-								<form action="#" method="post">
+								<p><span>799￥</span> <i class="item_price">599￥</i></p>
+								<form action="InsertBox.aspx" method="post">
+                                    <input type="hidden" name="PrID" value="4" />
 									<input type="hidden" name="cmd" value="_cart" />
 									<input type="hidden" name="add" value="1" /> 
 									<input type="hidden" name="w3ls_item" value="飞利浦热水器" /> 
-									<input type="hidden" name="amount" value="210.00"/>   
+									<input type="hidden" name="amount" value="599.00"/>   
 									<button type="submit" class="w3ls-cart">加入购物车</button>
 								</form>
 							</div> 
@@ -685,13 +714,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="modal_body_right_cart simpleCart_shelfItem">
-							<p><span>380￥</span> <i class="item_price">350￥</i></p>
-							<form action="#" method="post">
+							<p><span>1999￥</span> <i class="item_price">1799￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                                <input type="hidden" name="PrID" value="1" />
 								<input type="hidden" name="cmd" value="_cart">
 								<input type="hidden" name="add" value="1"> 
 								<input type="hidden" name="w3ls_item" value="TCL液晶电视"> 
-								<input type="hidden" name="amount" value="350.00">   
-								<button type="submit" class="w3ls-cart">加入购物车</button>
+								<input type="hidden" name="amount" value="1799.00">   
+								<button type="submit" class="w3ls-cart"  >加入购物车</button>
+                                
 							</form>
 						</div>
 
@@ -735,12 +766,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="modal_body_right_cart simpleCart_shelfItem">
-							<p><span>380￥</span> <i class="item_price">350￥</i></p>
-							<form action="#" method="post">
+							<p><span>2999￥</span> <i class="item_price">2799￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="2" />
 								<input type="hidden" name="cmd" value="_cart">
 								<input type="hidden" name="add" value="1"> 
 								<input type="hidden" name="w3ls_item" value="海尔电视"> 
-								<input type="hidden" name="amount" value="350.00">   
+								<input type="hidden" name="amount" value="2799.00">   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -785,8 +817,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="modal_body_right_cart simpleCart_shelfItem">
-							<p><span>380￥</span> <i class="item_price">350￥</i></p>
-							<form action="#" method="post">
+							<p><span>2899￥</span> <i class="item_price">2699￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="3" />
 								<input type="hidden" name="cmd" value="_cart">
 								<input type="hidden" name="add" value="1"> 
 								<input type="hidden" name="w3ls_item" value="小米智能电视"> 
@@ -835,12 +868,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="modal_body_right_cart simpleCart_shelfItem">
-							<p><span>950￥</span> <i class="item_price">820￥</i></p>
-							<form action="#" method="post">
+							<p><span>799￥</span> <i class="item_price">599￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="4" />
 								<input type="hidden" name="cmd" value="_cart">
 								<input type="hidden" name="add" value="1"> 
 								<input type="hidden" name="w3ls_item" value="美的热水器"> 
-								<input type="hidden" name="amount" value="820.00">   
+								<input type="hidden" name="amount" value="599.00">   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -887,12 +921,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="modal_body_right_cart simpleCart_shelfItem">
-							<p><span>460￥</span> <i class="item_price">450￥</i></p>
-							<form action="#" method="post">
+							<p><span>1799￥</span> <i class="item_price">1599￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="5" />
 								<input type="hidden" name="cmd" value="_cart">
 								<input type="hidden" name="add" value="1"> 
 								<input type="hidden" name="w3ls_item" value="美的空调"> 
-								<input type="hidden" name="amount" value="450.00">   
+								<input type="hidden" name="amount" value="1599.00">   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -938,12 +973,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="modal_body_right_cart simpleCart_shelfItem">
-							<p><span>960￥</span> <i class="item_price">920￥</i></p>
-							<form action="#" method="post">
+							<p><span>2599￥</span> <i class="item_price">2399￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="6" />
 								<input type="hidden" name="cmd" value="_cart">
 								<input type="hidden" name="add" value="1"> 
 								<input type="hidden" name="w3ls_item" value="康佳电熨斗"> 
-								<input type="hidden" name="amount" value="920.00">   
+								<input type="hidden" name="amount" value="2399.00">   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -988,12 +1024,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="modal_body_right_cart simpleCart_shelfItem">
-							<p><span>280￥</span> <i class="item_price">250￥</i></p>
-							<form action="#" method="post">
+							<p><span>2399￥</span> <i class="item_price">2199￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="7" />
 								<input type="hidden" name="cmd" value="_cart">
 								<input type="hidden" name="add" value="1"> 
 								<input type="hidden" name="w3ls_item" value="飞利浦咖啡机"> 
-								<input type="hidden" name="amount" value="250.00">   
+								<input type="hidden" name="amount" value="2399.00">   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -1039,12 +1076,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="modal_body_right_cart simpleCart_shelfItem">
-							<p><span>250￥</span> <i class="item_price">245￥</i></p>
-							<form action="#" method="post">
+							<p><span>699￥</span> <i class="item_price">499￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="8" />
 								<input type="hidden" name="cmd" value="_cart" />
 								<input type="hidden" name="add" value="1" /> 
 								<input type="hidden" name="w3ls_item" value="海尔电饭煲" /> 
-								<input type="hidden" name="amount" value="245.00"/>   
+								<input type="hidden" name="amount" value="499.00"/>   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div> 	
@@ -1089,12 +1127,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="modal_body_right_cart simpleCart_shelfItem">
-							<p><span>150￥</span> <i class="item_price">100￥</i></p> 
-							<form action="#" method="post">
+							<p><span>488￥</span> <i class="item_price">288￥</i></p> 
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="9" />
 								<input type="hidden" name="cmd" value="_cart">
 								<input type="hidden" name="add" value="1"> 
 								<input type="hidden" name="w3ls_item" value="美的油烟机"> 
-								<input type="hidden" name="amount" value="100.00">   
+								<input type="hidden" name="amount" value="288.00">   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -1140,12 +1179,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="modal_body_right_cart simpleCart_shelfItem">
-							<p><span>960￥</span> <i class="item_price">920￥</i></p>
-							<form action="#" method="post">
+							<p><span>4599￥</span> <i class="item_price">4399￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="10" />
 								<input type="hidden" name="cmd" value="_cart">
 								<input type="hidden" name="add" value="1"> 
 								<input type="hidden" name="w3ls_item" value="格力智能洗碗机"> 
-								<input type="hidden" name="amount" value="920.00">   
+								<input type="hidden" name="amount" value="4399.00">   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -1191,12 +1231,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="modal_body_right_cart simpleCart_shelfItem">
-							<p><span>60￥</span> <i class="item_price">58￥</i></p>
-							<form action="#" method="post">
+							<p><span>899￥</span> <i class="item_price">699￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="11" />
 								<input type="hidden" name="cmd" value="_cart" />
 								<input type="hidden" name="add" value="1" /> 
 								<input type="hidden" name="w3ls_item" value="海尔电烤箱" /> 
-								<input type="hidden" name="amount" value="58.00"/>   
+								<input type="hidden" name="amount" value="699.00"/>   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -1241,12 +1282,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>
 						<div class="modal_body_right_cart simpleCart_shelfItem">
-							<p><span>650￥</span> <i class="item_price">645￥</i></p>
-							<form action="#" method="post">
+							<p><span>799￥</span> <i class="item_price">599￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="12" />
 								<input type="hidden" name="cmd" value="_cart">
 								<input type="hidden" name="add" value="1"> 
 								<input type="hidden" name="w3ls_item" value="飞利浦微波炉"> 
-								<input type="hidden" name="amount" value="645.00">   
+								<input type="hidden" name="amount" value="599.00">   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -1291,12 +1333,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>  
 						<div class="modal_body_right_cart  simpleCart_shelfItem">
-							<p><span>445￥</span> <i class="item_price">425￥</i></p>
-							<form action="#" method="post">
+							<p><span>319￥</span> <i class="item_price">119￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="13" />
 								<input type="hidden" name="cmd" value="_cart" />
 								<input type="hidden" name="add" value="1" /> 
 								<input type="hidden" name="w3ls_item" value="格力热水壶" /> 
-								<input type="hidden" name="amount" value="425.00" />   
+								<input type="hidden" name="amount" value="119.00" />   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -1341,12 +1384,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>  
 						<div class="modal_body_right_cart  simpleCart_shelfItem">
-							<p><span>445￥</span> <i class="item_price">425￥</i></p>
-							<form action="#" method="post">
+							<p><span>666￥</span> <i class="item_price">466￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="14" />
 								<input type="hidden" name="cmd" value="_cart" />
 								<input type="hidden" name="add" value="1" /> 
 								<input type="hidden" name="w3ls_item" value="格力热水壶" /> 
-								<input type="hidden" name="amount" value="425.00" />   
+								<input type="hidden" name="amount" value="466.00" />   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -1391,12 +1435,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>  
 						<div class="modal_body_right_cart  simpleCart_shelfItem">
-							<p><span>445￥</span> <i class="item_price">425￥</i></p>
-							<form action="#" method="post">
+							<p><span>499￥</span> <i class="item_price">299￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="15" />
 								<input type="hidden" name="cmd" value="_cart" />
 								<input type="hidden" name="add" value="1" /> 
 								<input type="hidden" name="w3ls_item" value="格力热水壶" /> 
-								<input type="hidden" name="amount" value="425.00" />   
+								<input type="hidden" name="amount" value="299.00" />   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -1441,12 +1486,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>  
 						<div class="modal_body_right_cart  simpleCart_shelfItem">
-							<p><span>445￥</span> <i class="item_price">425￥</i></p>
-							<form action="#" method="post">
+							<p><span>999￥</span> <i class="item_price">799￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="16" />
 								<input type="hidden" name="cmd" value="_cart" />
 								<input type="hidden" name="add" value="1" /> 
 								<input type="hidden" name="w3ls_item" value="格力热水壶" /> 
-								<input type="hidden" name="amount" value="425.00" />   
+								<input type="hidden" name="amount" value="799.00" />   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -1491,12 +1537,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>  
 						<div class="modal_body_right_cart  simpleCart_shelfItem">
-							<p><span>445￥</span> <i class="item_price">425￥</i></p>
-							<form action="#" method="post">
+							<p><span>299￥</span> <i class="item_price">99￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="17" />
 								<input type="hidden" name="cmd" value="_cart" />
 								<input type="hidden" name="add" value="1" /> 
 								<input type="hidden" name="w3ls_item" value="格力热水壶" /> 
-								<input type="hidden" name="amount" value="425.00" />   
+								<input type="hidden" name="amount" value="99.00" />   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -1541,12 +1588,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>  
 						<div class="modal_body_right_cart  simpleCart_shelfItem">
-							<p><span>445￥</span> <i class="item_price">425￥</i></p>
-							<form action="#" method="post">
+							<p><span>1499￥</span> <i class="item_price">1299￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="18" />
 								<input type="hidden" name="cmd" value="_cart" />
 								<input type="hidden" name="add" value="1" /> 
 								<input type="hidden" name="w3ls_item" value="格力热水壶" /> 
-								<input type="hidden" name="amount" value="425.00" />   
+								<input type="hidden" name="amount" value="1299.00" />   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -1591,12 +1639,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<div class="clearfix"> </div>
 						</div>  
 						<div class="modal_body_right_cart  simpleCart_shelfItem">
-							<p><span>445￥</span> <i class="item_price">425￥</i></p>
-							<form action="#" method="post">
+							<p><span>6799￥</span> <i class="item_price">6599￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="19" />
 								<input type="hidden" name="cmd" value="_cart" />
 								<input type="hidden" name="add" value="1" /> 
 								<input type="hidden" name="w3ls_item" value="格力热水壶" /> 
-								<input type="hidden" name="amount" value="425.00" />   
+								<input type="hidden" name="amount" value="6599.00" />   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -1607,7 +1656,517 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			</section>
 		</div>
 	</div>
-</div>  
+</div> 
+<div class="modal video-modal fade" id="myModal20" tabindex="-1" role="dialog" aria-labelledby="myModal20">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div>
+			<section>
+				<div class="modal-body">
+					<div class="col-md-5 modal_body_left">
+						<img src="../img/haier-tv-1.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="col-md-7 modal_body_right">
+						<h4>海尔 模卡43A3C液晶电视</h4>
+						<p>海尔(Haier)LS55M31 55英寸 4K超高清人工智能网络液晶平板电视4K超高清 人工智能 环绕声系统</p>
+						<div class="rating">
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="clearfix"> </div>
+						</div>  
+						<div class="modal_body_right_cart  simpleCart_shelfItem">
+							<p><span>1899￥</span> <i class="item_price">1699￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="20" />
+								<input type="hidden" name="cmd" value="_cart" />
+								<input type="hidden" name="add" value="1" /> 
+								<input type="hidden" name="w3ls_item" value="海尔电视" /> 
+								<input type="hidden" name="amount" value="1699.00" />   
+								<button type="submit" class="w3ls-cart">加入购物车</button>
+							</form>
+						</div>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div> 
+<div class="modal video-modal fade" id="myModal21" tabindex="-1" role="dialog" aria-labelledby="myModal21">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div>
+			<section>
+				<div class="modal-body">
+					<div class="col-md-5 modal_body_left">
+						<img src="../img/xiaomi-tv-1.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="col-md-7 modal_body_right">
+						<h4>小米智能电视</h4>
+						<p>Xiaomi/小米电视4A 55英寸 4k超高清智能语音网络平板电视机 5060 4K超高清 人工智能语音 杜比音效</p>
+						<div class="rating">
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="clearfix"> </div>
+						</div>  
+						<div class="modal_body_right_cart  simpleCart_shelfItem">
+							<p><span>2399￥</span> <i class="item_price">2199￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="21" />
+								<input type="hidden" name="cmd" value="_cart" />
+								<input type="hidden" name="add" value="1" /> 
+								<input type="hidden" name="w3ls_item" value="小米智能电视" /> 
+								<input type="hidden" name="amount" value="2199.00" />   
+								<button type="submit" class="w3ls-cart">加入购物车</button>
+							</form>
+						</div>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div> 
+<div class="modal video-modal fade" id="myModal22" tabindex="-1" role="dialog" aria-labelledby="myModal22">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div>
+			<section>
+				<div class="modal-body">
+					<div class="col-md-5 modal_body_left">
+						<img src="../img/jianeng-bx-1.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="col-md-7 modal_body_right">
+						<h4>佳能双层冰箱</h4>
+						<p>佳能 BCD-182TA冰箱双门式家用节能小型双开门电冰箱宿舍实用双门 72升实用大冷冻</p>
+						<div class="rating">
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="clearfix"> </div>
+						</div>  
+						<div class="modal_body_right_cart  simpleCart_shelfItem">
+							<p><span>2899￥</span> <i class="item_price">2699￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="22" />
+								<input type="hidden" name="cmd" value="_cart" />
+								<input type="hidden" name="add" value="1" /> 
+								<input type="hidden" name="w3ls_item" value="佳能冰箱" /> 
+								<input type="hidden" name="amount" value="2699.00" />   
+								<button type="submit" class="w3ls-cart">加入购物车</button>
+							</form>
+						</div>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div> 
+<div class="modal video-modal fade" id="myModal23" tabindex="-1" role="dialog" aria-labelledby="myModal23">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div>
+			<section>
+				<div class="modal-body">
+					<div class="col-md-5 modal_body_left">
+						<img src="../img/tcl-bx-1.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="col-md-7 modal_body_right">
+						<h4>TCL 节能冰箱</h4>
+						<p>TCL BCD-206TEWF1 206升 三门负离子风冷无霜冰箱 家用（流光金）负离子养鲜 风冷无霜 电脑控温 节能静音</p>
+						<div class="rating">
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="clearfix"> </div>
+						</div>  
+						<div class="modal_body_right_cart  simpleCart_shelfItem">
+							<p><span>2199￥</span> <i class="item_price">1999￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="23" />
+								<input type="hidden" name="cmd" value="_cart" />
+								<input type="hidden" name="add" value="1" /> 
+								<input type="hidden" name="w3ls_item" value="TCL 节能电视" /> 
+								<input type="hidden" name="amount" value="1999.00" />   
+								<button type="submit" class="w3ls-cart">加入购物车</button>
+							</form>
+						</div>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+<div class="modal video-modal fade" id="myModal24" tabindex="-1" role="dialog" aria-labelledby="myModal24">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div>
+			<section>
+				<div class="modal-body">
+					<div class="col-md-5 modal_body_left">
+						<img src="../img/meidi-kt-1.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="col-md-7 modal_body_right">
+						<h4>美的空调 冷暖双气</h4>
+						<p>Midea/美的大1.5匹变频智能壁挂式家用冷暖空调KFR-35GW/WDBN8A3@快速冷暖，性价比爆款，抢到就是运气！</p>
+						<div class="rating">
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="clearfix"> </div>
+						</div>  
+						<div class="modal_body_right_cart  simpleCart_shelfItem">
+							<p><span>1499￥</span> <i class="item_price">1299￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="24" />
+								<input type="hidden" name="cmd" value="_cart" />
+								<input type="hidden" name="add" value="1" /> 
+								<input type="hidden" name="w3ls_item" value="美的空调" /> 
+								<input type="hidden" name="amount" value="1299.00" />   
+								<button type="submit" class="w3ls-cart">加入购物车</button>
+							</form>
+						</div>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div> 
+<div class="modal video-modal fade" id="myModal25" tabindex="-1" role="dialog" aria-labelledby="myModal25">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div>
+			<section>
+				<div class="modal-body">
+					<div class="col-md-5 modal_body_left">
+						<img src="../img/geli-kt-1.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="col-md-7 modal_body_right">
+						<h4>格力空调 节能减排</h4>
+						<p>格力大1.5p匹空调挂机变频家用冷暖节能省电壁挂式官方旗舰店官网1赫兹变频 蒸发器自清洁 上下扫风</p>
+						<div class="rating">
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="clearfix"> </div>
+						</div>  
+						<div class="modal_body_right_cart  simpleCart_shelfItem">
+							<p><span>2099￥</span> <i class="item_price">1899￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="25" />
+								<input type="hidden" name="cmd" value="_cart" />
+								<input type="hidden" name="add" value="1" /> 
+								<input type="hidden" name="w3ls_item" value="格力空调" /> 
+								<input type="hidden" name="amount" value="1899.00" />   
+								<button type="submit" class="w3ls-cart">加入购物车</button>
+							</form>
+						</div>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+<div class="modal video-modal fade" id="myModal26" tabindex="-1" role="dialog" aria-labelledby="myModal26">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div>
+			<section>
+				<div class="modal-body">
+					<div class="col-md-5 modal_body_left">
+						<img src="../img/meidi-rs-1.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="col-md-7 modal_body_right">
+						<h4>美的热水器</h4>
+						<p>Midea/美的F80-30W7(HD)80升储水式电热水器卫生间家用洗澡速热60</p>
+						<div class="rating">
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="clearfix"> </div>
+						</div>  
+						<div class="modal_body_right_cart  simpleCart_shelfItem">
+							<p><span>599￥</span> <i class="item_price">399￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="26" />
+								<input type="hidden" name="cmd" value="_cart" />
+								<input type="hidden" name="add" value="1" /> 
+								<input type="hidden" name="w3ls_item" value="美的热水器" /> 
+								<input type="hidden" name="amount" value="399.00" />   
+								<button type="submit" class="w3ls-cart">加入购物车</button>
+							</form>
+						</div>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+<div class="modal video-modal fade" id="myModal27" tabindex="-1" role="dialog" aria-labelledby="myModal27">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div>
+			<section>
+				<div class="modal-body">
+					<div class="col-md-5 modal_body_left">
+						<img src="../img/haier-rs-1.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="col-md-7 modal_body_right">
+						<h4>海尔热水器</h4>
+						<p>Haier/海尔EC6001-GC电热水器电家用60升速热小型储水即热式洗澡</p>
+						<div class="rating">
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="clearfix"> </div>
+						</div>  
+						<div class="modal_body_right_cart  simpleCart_shelfItem">
+							<p><span>699￥</span> <i class="item_price">499￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="27" />
+								<input type="hidden" name="cmd" value="_cart" />
+								<input type="hidden" name="add" value="1" /> 
+								<input type="hidden" name="w3ls_item" value="海尔热水器" /> 
+								<input type="hidden" name="amount" value="499.00" />   
+								<button type="submit" class="w3ls-cart">加入购物车</button>
+							</form>
+						</div>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+<div class="modal video-modal fade" id="myModal28" tabindex="-1" role="dialog" aria-labelledby="myModal28">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div>
+			<section>
+				<div class="modal-body">
+					<div class="col-md-5 modal_body_left">
+						<img src="../img/meidi-rq-1.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="col-md-7 modal_body_right">
+						<h4>美的燃气灶</h4>
+						<p>Midea/美的JZT-Q216B燃气灶家用天然气灶台嵌两用式灶具 4.1KW大火力，一级能效，黑晶防爆面板</p>
+						<div class="rating">
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="clearfix"> </div>
+						</div>  
+						<div class="modal_body_right_cart  simpleCart_shelfItem">
+							<p><span>999￥</span> <i class="item_price">799￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="28" />
+								<input type="hidden" name="cmd" value="_cart" />
+								<input type="hidden" name="add" value="1" /> 
+								<input type="hidden" name="w3ls_item" value="美的燃气灶" /> 
+								<input type="hidden" name="amount" value="799.00" />   
+								<button type="submit" class="w3ls-cart">加入购物车</button>
+							</form>
+						</div>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+<div class="modal video-modal fade" id="myModal29" tabindex="-1" role="dialog" aria-labelledby="myModal29">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div>
+			<section>
+				<div class="modal-body">
+					<div class="col-md-5 modal_body_left">
+						<img src="../img/shuaikang-rq-1.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="col-md-7 modal_body_right">
+						<h4>帅康燃气灶</h4>
+						<p>帅康35C台式燃气灶嵌入式煤气灶双灶具厨房灶台家用特价天然气赠精美刀具六件套！4.2kw大火力！</p>
+						<div class="rating">
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="../images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="clearfix"> </div>
+						</div>  
+						<div class="modal_body_right_cart  simpleCart_shelfItem">
+							<p><span>1099￥</span> <i class="item_price">899￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                               <input type="hidden" name="PrID" value="29" />
+								<input type="hidden" name="cmd" value="_cart" />
+								<input type="hidden" name="add" value="1" /> 
+								<input type="hidden" name="w3ls_item" value="帅康燃气灶" /> 
+								<input type="hidden" name="amount" value="899.00" />   
+								<button type="submit" class="w3ls-cart">加入购物车</button>
+							</form>
+						</div>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
 <!-- Related Products -->
 <div class="w3l_related_products">
 	<div class="container">
@@ -1628,14 +2187,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 								</div>
 							</div>
 						</div>
-						<h5><a href="single.aspx">海尔空调</a></h5>
+						<h5><a href="single.aspx" onclick="addCookie();" id="3">海尔空调</a></h5>
 						<div class="simpleCart_shelfItem"> 
-							<p class="flexisel_ecommerce_cart"><span>150￥</span> <i class="item_price">100￥</i></p>
-							<form action="#" method="post">
+							<p class="flexisel_ecommerce_cart"><span>2899￥</span> <i class="item_price">2699￥</i></p>
+						<form action="InsertBox.aspx" method="post">
+                                    <input type="hidden" name="PrID" value="3" />
 								<input type="hidden" name="cmd" value="_cart">
 								<input type="hidden" name="add" value="1"> 
 								<input type="hidden" name="w3ls_item" value="海尔空调"> 
-								<input type="hidden" name="amount" value="100.00">   
+								<input type="hidden" name="amount" value="2699.00">   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form> 
 						</div>
@@ -1653,18 +2213,19 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						<img src="../img/haier-xj-2.jpg" alt=" " class="img-responsive" />
 							<div class="w3_hs_bottom">
 								<div class="flex_ecommerce">
-									<a href="#" data-toggle="modal" data-target="#myModal19"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+									<a href="#" data-toggle="modal" data-target="#myModal06"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
 								</div>
 							</div>
 						</div>
-						<h5><a href="single.aspx">海尔全自动洗衣机</a></h5>
+						<h5><a href="single.aspx" onclick="addCookie();" id="6">海尔全自动洗衣机</a></h5>
 						<div class="simpleCart_shelfItem">
-							<p class="flexisel_ecommerce_cart"><span>960￥</span> <i class="item_price">920￥</i></p>
-							<form action="#" method="post">
+							<p class="flexisel_ecommerce_cart"><span>2599￥</span> <i class="item_price">2399￥</i></p>
+						<form action="InsertBox.aspx" method="post">
+                                <input type="hidden" name="PrID" value="6" />
 								<input type="hidden" name="cmd" value="_cart" />
 								<input type="hidden" name="add" value="1" /> 
-								<input type="hidden" name="w3ls_item" value="佳能单反相机" /> 
-								<input type="hidden" name="amount" value="920.00"/>   
+								<input type="hidden" name="w3ls_item" value="海尔洗衣机" /> 
+								<input type="hidden" name="amount" value="2399.00"/>   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -1687,14 +2248,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 								</div>
 							</div>
 						</div>
-						<h5><a href="single.aspx">液晶电视</a></h5>
+						<h5><a href="single.aspx" onclick="addCookie();" id="1">液晶电视</a></h5>
 						<div class="simpleCart_shelfItem">
-							<p class="flexisel_ecommerce_cart"><span>650￥</span> <i class="item_price">645￥</i></p>
-							<form action="#" method="post">
+							<p class="flexisel_ecommerce_cart"><span>1999￥</span> <i class="item_price">1799￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                                <input type="hidden" name="PrID" value="1" />
 								<input type="hidden" name="cmd" value="_cart" />
 								<input type="hidden" name="add" value="1" /> 
 								<input type="hidden" name="w3ls_item" value="液晶电视" /> 
-								<input type="hidden" name="amount" value="645.00"/>   
+								<input type="hidden" name="amount" value="1799.00"/>   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div>
@@ -1716,14 +2278,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 								</div>
 							</div>
 						</div>
-						<h5><a href="single.aspx">飞利浦抽烟机</a></h5>
+						<h5><a href="single.aspx" onclick="addCookie();" id="7">飞利浦抽烟机</a></h5>
 						<div class="simpleCart_shelfItem">
-							<p><span>60￥</span> <i class="item_price">58￥</i></p>
-							<form action="#" method="post">
+							<p><span>2399￥</span> <i class="item_price">2199￥</i></p>
+							<form action="InsertBox.aspx" method="post">
+                                <input type="hidden" name="PrID" value="7" />
 								<input type="hidden" name="cmd" value="_cart" />
 								<input type="hidden" name="add" value="1" /> 
 								<input type="hidden" name="w3ls_item" value="飞利浦抽烟机" /> 
-								<input type="hidden" name="amount" value="58.00"/>   
+								<input type="hidden" name="amount" value="2199.00"/>   
 								<button type="submit" class="w3ls-cart">加入购物车</button>
 							</form>
 						</div> 

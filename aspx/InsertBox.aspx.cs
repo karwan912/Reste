@@ -11,21 +11,19 @@ using System.Collections;
 using System.Web.Security;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
+using System.Text;
 
-public partial class aspx_login : System.Web.UI.Page
+public partial class aspx_InsertBox : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
-        if (Session["uname"] != null)
+        if (Session["Usernm"] == null)
         {
-            Response.Write("<script language=javascript>alert('已有账户登陆！请先退出！');</script>");
+            Response.Write("<script language=javascript>alert('请先登录！');</script>");
             Server.Transfer("index.aspx");
-
         }
         else
         {
-
 
             string mysqlstr = System.Configuration.ConfigurationManager.ConnectionStrings["SqlConnStr"].ConnectionString;
             OleDbConnection conn = new OleDbConnection(mysqlstr);
@@ -33,43 +31,41 @@ public partial class aspx_login : System.Web.UI.Page
             OleDbDataReader datar;
 
 
+            string s = Session["Usernm"].ToString();
+            string Userid = Session["UserID"].ToString();
+            string Prid = Request.Form["PrID"];
+            string PrNum = Request.Form["add"];
 
-            string strem = Request.Form["Email"];
 
-            string uslpm = System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(Request.Form["Password"], "md5");
-            string insertsql = "select * from UserList where UserEmail='" + strem + "'and LoginPass='" + uslpm + "' ";
+
+            string insertsql = "insert into Box(UserID,ProductId,ProNum) values('" + Userid + "','" + Prid + "','" + PrNum + "')";
+
+            // Response.Write("<script language=javascript>alert('6666');</script>");
 
             conn.Open();
             cmd = new OleDbCommand(insertsql, conn);
             try
             {
-                datar = cmd.ExecuteReader();
-                if (datar.Read())
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
                 {
-
-                    Session["Usernm"] = datar["UserName"].ToString();
-                    Session["Userid"] = datar["UserID"].ToString();
-                    Response.Redirect("index.aspx");
-
+                    Response.Write("<script language=javascript>alert('加入购物车成功！');</script>");
+                    Server.Transfer("index.aspx");
                 }
                 else
                 {
-                    Response.Write("<script language=javascript>alert('用户名或密码错误！');</script>");
-                    Server.Transfer("index.aspx");
-
-
+                    Response.Write("11111");
                 }
-
             }
             catch (Exception ex)
             {
-                Response.Write("应该是sql 查询语句出错！");
+                Response.Write("2222");
             }
-
 
             conn.Close();
 
-        }
 
+
+        }
     }
 }
