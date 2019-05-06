@@ -264,14 +264,15 @@
 			<div class="col-md-4"></div>
 			<div class="col-md-6 ">
 				<div>
-					<form action="" method="">
+					<form action="InsertComment.aspx" method="post">
 						<div>
-							<img class="img-circle img-style3"  id=""  src="../images/13.jpg"> &nbsp;&nbsp;&nbsp;&nbsp;
-							<label class="" id="" >商品名称： AlimajanYasin</label>
+							<img class="img-circle img-style3"  id="Photo1" runat="server"  src="../images/13.jpg"> &nbsp;&nbsp;&nbsp;&nbsp;
+							<label class="" id="" >商品名称：<span id="PrName1" runat="server">AlimajanYasin</span></label>
 						</div>
 						<div>
-							<label class="datestyle"> 2018-06-02 12：33：02</label>
+							<label class="datestyle" id="Time1" runat="server"> 2018-06-02 12：33：02</label>
 							&nbsp;&nbsp;&nbsp;&nbsp;
+
 						</div>
 
 						<div>
@@ -292,7 +293,7 @@
 							
 							<div class="form-group">
 								<label for="comment">	评价：</label>
-								<textarea class="form-control" rows="5" id="comment"></textarea>
+								<textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
 							</div>
 							<div>
 								<button class="btn btn-success float-right" id="">提交</button>

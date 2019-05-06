@@ -4,6 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.OleDb;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web.Security;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Text;
 
 public partial class aspx_personal : System.Web.UI.Page
 {
@@ -19,6 +27,10 @@ public partial class aspx_personal : System.Web.UI.Page
         {
             string s = Session["Usernm"].ToString(); ;
             MyName.InnerText = s;
+            string Userid = Session["UserID"].ToString();
+
+
+
         }
     }
 }

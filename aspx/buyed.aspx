@@ -289,21 +289,21 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div>
 						<tr class="info">
 							<td>
-								<img class="img-circle img-style"  id=""  src="../images/13.jpg">
+								<img class="img-circle img-style"  id="Photo1"  runat="server" src="../images/13.jpg">
 							</td>
-							<td>
+							<td id="PrName1" runat="server">
 								TB - Monthly
 							</td>
-							<td>
+							<td id="Time1" runat="server">
 								03/04/2012
-							</td>
-							<td>
+							</td >
+							<td  id="Price1" runat="server">
 								Pending
 							</td>
-							<td>
+							<td id="PrNum" runat="server">
 								Default
 							</td>
-							<td>
+							<td id="status1" runat="server">
 								Default
 							</td>
 							<td >
@@ -318,21 +318,21 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div>
 						<tr class="info">
 							<td>
-								<img class="img-circle img-style"  id=""  src="../images/13.jpg">
+								<img class="img-circle img-style"  id="Photo2"  runat="server" src="../images/13.jpg">
 							</td>
-							<td>
+							<td id="PrName2" runat="server">
 								TB - Monthly
 							</td>
-							<td>
+							<td id="Time2" runat="server">
 								03/04/2012
 							</td>
-							<td>
+							<td id="Price2" runat="server">
 								Pending
 							</td>
-							<td>
+							<td id="PrNum2" runat="server">
 								Default
 							</td>
-							<td>
+							<td id="status2" runat="server">
 								Default
 							</td>
 							<td >
@@ -344,92 +344,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						</tr>
 					</div>
 					
-					<div>
-						<tr class="info">
-							<td>
-								<img class="img-circle img-style"  id=""  src="../images/13.jpg">
-							</td>
-							<td>
-								TB - Monthly
-							</td>
-							<td>
-								03/04/2012
-							</td>
-							<td>
-								Pending
-							</td>
-							<td>
-								Default
-							</td>
-							<td>
-								Default
-							</td>
-							<td >
-								<a class="btn btn-link" href="appraise.aspx">去评价</a>
-							</td>
-							<td >
-								<a class="btn btn-link" href="drawback.aspx">退款/退货</a>
-							</td>
-						</tr>
-					</div>
+					
 
-					<div>
-						<tr class="info">
-							<td>
-								<img class="img-circle img-style"  id=""  src="../images/13.jpg">
-							</td>
-							<td>
-								TB - Monthly
-							</td>
-							<td>
-								03/04/2012
-							</td>
-							<td>
-								Pending
-							</td>
-							<td>
-								Default
-							</td>
-							<td>
-								Default
-							</td>
-							<td >
-								<a class="btn btn-link" href="appraise.aspx">去评价</a>
-							</td>
-							<td >
-								<a class="btn btn-link" href="drawback.aspx">退款/退货</a>
-							</td>
-						</tr>
-					</div>
-
-					<div>
-						<tr class="info">
-							<td>
-								<img class="img-circle img-style"  id=""  src="../images/13.jpg">
-							</td>
-							<td>
-								TB - Monthly
-							</td>
-							<td>
-								03/04/2012
-							</td>
-							<td>
-								Pending
-							</td>
-							<td>
-								Default
-							</td>
-							<td>
-								Default
-							</td>
-							<td >
-								<a class="btn btn-link" href="appraise.aspx">去评价</a>
-							</td>
-							<td >
-								<a class="btn btn-link" href="drawback.aspx">退款/退货</a>
-							</td>
-						</tr>
-					</div>
+					
 				</tbody>
 </table>
 

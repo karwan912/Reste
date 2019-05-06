@@ -49,9 +49,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
         });
     });
 </script>
+
+    
 <!-- //end-smooth-scrolling --> 
 </head> 
-<body> 
+<body "> 
    <script type="text/javascript">
        function addCookie(e) {
 
@@ -67,6 +69,10 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 
        }
+
+       
+       
+      
     </script>
 
 	<!-- header modal -->
@@ -334,9 +340,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						<h5>数量:</h5>
 						<div class="quantity"> 
 							<div class="quantity-select">                           
-								<div class="entry value-minus1">&nbsp;</div>
-								<div class="entry value1"><span>1</span></div>
-								<div class="entry value-plus1 active">&nbsp;</div>
+								<div class="entry value-minus1" ">&nbsp;</div>
+								<div class="entry value1"><span id="PrNum"  >1</span></div>
+								<div class="entry value-plus1 active" >&nbsp;</div>
 							</div>
 						</div>
 						<!--quantity-->
@@ -376,10 +382,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</div>
 				<div class="simpleCart_shelfItem">
 					<p><span runat="server" id="prifake">460￥</span> <i class="item_price" runat="server" id="pritrue">450￥</i></p>
-					<form action="#" method="post">
+					<form action="InsertBox.aspx" method="post">
+                        <input type="hidden" runat="server" id="PrID" name="PrID" value="9" />
 						<input type="hidden" name="cmd" value="_cart">
-						<input type="hidden" name="add" value="1"> 
-						<input type="hidden" name="w3ls_item" value="压力锅" id="ProName"> 
+						<input type="hidden" name="add" value="1" id="add"> 
+						<input type="hidden" name="w3ls_item" value="压力锅" id="ProName" > 
 						<input type="hidden" name="amount" value="450.00" id="proprice">   
 						<button type="submit" class="w3ls-cart">加入购物车</button>
 					</form>
@@ -410,16 +417,16 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					</div>	
 
 					<div class="tab-2 resp-tab-content additional_info_grid" aria-labelledby="tab_item-1">
-						<h4>(<label class="" id="">2</label>) 评价</h4>
+						<h4> 评价</h4>
 						<div class="additional_info_sub_grids">
 							<div class="col-xs-2 additional_info_sub_grid_left">
 								<img src="../images/t1.png" alt=" " class="img-responsive" />
 							</div>
 							<div class="col-xs-10 additional_info_sub_grid_right">
 								<div class="additional_info_sub_grid_rightl">
-									<a href="single.aspx">Laura</a>
-									<h5>Oct 06, 2016.</h5>
-									<p>Quis autem vel eum iure reprehenderit qui in ea voluptate 
+									<label id="UserName" runat="server">Alimjan</label>
+									<h5  id="ComTime" runat="server">Oct 06, 2016.</h5>
+									<p id="content" runat="server">Quis autem vel eum iure reprehenderit qui in ea voluptate 
 										velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat 
 									quo voluptas nulla pariatur.</p>
 								</div>
@@ -447,42 +454,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
-						<div class="additional_info_sub_grids">
-							<div class="col-xs-2 additional_info_sub_grid_left">
-								<img src="../images/t2.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="col-xs-10 additional_info_sub_grid_right">
-								<div class="additional_info_sub_grid_rightl">
-									<a href="single.aspx">Michael</a>
-									<h5>Oct 04, 2016.</h5>
-									<p>Quis autem vel eum iure reprehenderit qui in ea voluptate 
-										velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat 
-									quo voluptas nulla pariatur.</p>
-								</div>
-								<div class="additional_info_sub_grid_rightr">
-									<div class="rating">
-										<div class="rating-left">
-											<img src="../images/star-.png" alt=" " class="img-responsive">
-										</div>
-										<div class="rating-left">
-											<img src="../images/star-.png" alt=" " class="img-responsive">
-										</div>
-										<div class="rating-left">
-											<img src="../images/star.png" alt=" " class="img-responsive">
-										</div>
-										<div class="rating-left">
-											<img src="../images/star.png" alt=" " class="img-responsive">
-										</div>
-										<div class="rating-left">
-											<img src="../images/star.png" alt=" " class="img-responsive">
-										</div>
-										<div class="clearfix"> </div>
-									</div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
+						
 						
 					</div> 			        					            	      
 				</div>	

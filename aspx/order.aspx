@@ -251,7 +251,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 </div>
 <!-- //breadcrumbs --> 	
 <!-- short codes -->
-<div class="typo codes">
+<div class="typo codes img-bg-login ">
 	<div class="container"> 
 		<h3 class="agileits-title">查看订单</h3>
 
@@ -261,13 +261,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<div class="col-md-8">
 				<div class="boxcont1" id="">
 				<div>
-					<img class="img-circle img-style3"  id=""  src="../images/14.jpg"> &nbsp;&nbsp;&nbsp;&nbsp;
-					<label class="" id="" >商品名称： AlimajanYasin</label>
+					<img class="img-circle img-style3"  id="Photo1" runat="server"   src="../images/14.jpg"> &nbsp;&nbsp;&nbsp;&nbsp;
+					<label class="" >商品名称：<span id="PrName1"  runat="server"> AlimajanYasin</span></label>
 				</div>
 				<div>
-					<label class="datestyle"> 2018-06-02 12：33：02</label>
+					<label class="datestyle" id="Time1" runat="server"> 2018-06-02 12：33：02</label>
 					&nbsp;&nbsp;&nbsp;&nbsp;
-					【状态】&nbsp;&nbsp;<label class="" id=""> 待收货</label>
+					【状态】&nbsp;&nbsp;<label class="" id="status1" runat="server"> 待收货</label>
 				</div>
 				<div>
 					<button type="button" class="btn btn-primary" data-toggle="collapse" 
@@ -291,20 +291,22 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</div>
 				</div>
 				<div>
-					<button class="btn btn-success float-right" id="">确认收货</button>
+                    <form action="SuccessBuy.aspx" method="post">
+					<button class="btn btn-success float-right" type="submit" id="">确认收货</button>
+                        </form>
 				</div>
 				</div>
 
 
 				<div class="" id="">
 				<div>
-					<img class="img-circle img-style3"  id=""  src="../images/14.jpg"> &nbsp;&nbsp;&nbsp;&nbsp;
-					<label class="" id="" >商品名称： AlimajanYasin</label>
+					<img class="img-circle img-style3"  id="Photo2" runat="server"  src="../images/14.jpg"> &nbsp;&nbsp;&nbsp;&nbsp;
+					<label class="" id="" >商品名称：<span id="PrName2"  runat="server"> AlimajanYasin</span></label>
 				</div>
 				<div>
-					<label class="datestyle"> 2018-06-02 12：33：02</label>
+					<label class="datestyle" id="Time2" runat="server"> 2018-06-02 12：33：02</label>
 					&nbsp;&nbsp;&nbsp;&nbsp;
-					【状态】&nbsp;&nbsp;<label class="" id=""> 待发货</label>
+					【状态】&nbsp;&nbsp;<label class="" id="status2" runat="server"> 待发货</label>
 				</div>
 				<div>
 					<button type="button" class="btn btn-primary" data-toggle="collapse" 
@@ -328,7 +330,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</div>
 				</div>
 				<div>
-					<button class="btn btn-success float-right" id="">确认收货</button>
+                    <form action="SuccessBuy.aspx" method="post">
+					<button class="btn btn-success float-right" type="submit" id="">确认收货</button>
+                    </form>
 				</div>
 				</div>
 

@@ -4,6 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.OleDb;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web.Security;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Text;
 
 public partial class aspx_order : System.Web.UI.Page
 {
@@ -18,6 +26,82 @@ public partial class aspx_order : System.Web.UI.Page
         {
             string s = Session["Usernm"].ToString(); ;
             MyName.InnerText = s;
+            string Userid = Session["UserID"].ToString();
+
+
+            string mysqlstr = System.Configuration.ConfigurationManager.ConnectionStrings["SqlConnStr"].ConnectionString;
+            OleDbConnection conn = new OleDbConnection(mysqlstr);
+            OleDbCommand cmd;
+            OleDbDataReader datar;
+
+            string selectsql = "select * from myorder where UserID='" + Userid + "' and oderstatus='待收货' ";
+            
+            conn.Open();
+            cmd = new OleDbCommand(selectsql, conn);
+            try {
+                datar = cmd.ExecuteReader();
+                while (datar.Read()) {
+                    string time = datar["buytime"].ToString();
+                    string proid = datar["ProductID"].ToString();
+                    string status = datar["oderstatus"].ToString();
+                    
+
+
+                    OleDbCommand cmd2;
+                    OleDbDataReader datar2;
+                    string selectsql2 = "select * from Product where ProductID='" + proid + "' ";
+                    cmd2 = new OleDbCommand(selectsql2, conn);
+
+                    try {
+                        datar2 = cmd2.ExecuteReader();
+                        if(datar2.Read()){
+                            string prpt = datar2["ProductPhoto"].ToString();
+                            string prnm = datar2["ProductName"].ToString();
+                            Photo1.Src = prpt.Trim();
+                            PrName1.InnerText = prnm.Trim();
+                            Time1.InnerText = time.Trim();
+                            status1.InnerText = status.Trim();
+                        }
+
+                    }catch(Exception ex){
+                    
+                    }
+
+                    OleDbCommand cmd3;
+                    OleDbDataReader datar3;
+                    string fakeproid = "3";
+                    string selectsql3 = "select * from Product where ProductID='" + fakeproid + "' ";
+                    cmd3 = new OleDbCommand(selectsql3, conn);
+                    try {
+                        datar3 = cmd3.ExecuteReader();
+                        if (datar3.Read()) {
+                            string prpt2 = datar3["ProductPhoto"].ToString();
+                            string prnm2 = datar3["ProductName"].ToString();
+
+                            Photo2.Src = prpt2.Trim();
+                            PrName2.InnerText = prnm2.Trim();
+                            Time2.InnerText = time.Trim();
+                            status2.InnerText = status.Trim();
+                            
+                        }
+                    
+                    }catch(Exception ex){
+                    
+                    }
+
+
+
+                }
+
+
+            
+            }catch(Exception ex){
+            
+            
+            }
+
+
+
         }
 
     }

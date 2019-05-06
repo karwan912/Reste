@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Box.aspx.cs" Inherits="aspx_Box" %>
 
+
+
+
 <!DOCTYPE html>
 <html >
 <head runat="server">
@@ -89,7 +92,6 @@
 												<input placeholder="邮箱地址" name="Email"  type="email" required=""    id="UsEmail">	
 												<input placeholder="密码" name="Password" type="password" required="" id="UsLogPass">	
 												<input placeholder="再次输入密码" name="Password2" type="password" required="" id="UsLogPass2">
-
 												<div class="sign-up">
                                                     <input type="submit" value="创建账户"/>
 												</div>
@@ -119,11 +121,8 @@
 								<div class="col-md-12">
 								<ul class="social">
 									<li class="social_facebook"><a href="#" class=""><span class="iconfont icon-weixin "></span></a></li>
-
 									<li class="social_dribbble"><a href="#" class=""><span class="iconfont icon-weibo "></span></a></li>
-
 									<li class="social_twitter"><a href="#" class=""><span class="iconfont icon-QQ "></span></a></li>
-
 									<li class="social_behance"><a href="#" class=""> <span class="iconfont icon-wangyi "></span></a></li>
 								</ul>
 							</div>
@@ -253,9 +252,11 @@
 	<!-- short codes -->
 	<div class="typo codes img-bg-login ">
 		<div class="container"> 
+            <form action="InsertOrder.aspx" method="post">
 			<h3 class="agileits-title">购物车</h3>
 			
 			<div>
+                
 				<div class="row">
 					<table class=" table table-striped table-hover" id="Box-table">
 					<thead>
@@ -282,21 +283,26 @@
 						</tr>
 					</thead>
 					<tbody>
+                       
 						<div class="Box-item" id="Box-item1">
+                            
 							<tr class="info" >
 								
 								<td>
-									<img class="img-circle img-style "  id=""  src="../images/13.jpg">
+									<img class="img-circle img-style "  id="Prpt" runat="server"  src="../images/13.jpg">
 								</td>
 								<td>
-									电视
+									<label id="Prname" runat="server"> 电视 </label>
+                                   
 								</td>
 								<td>
-									<label class="" id="price">99</label>￥
+									<label class="" runat="server" id="price">99</label>￥
 								</td>
 								<td>
 									<button type="button" class="btn btn-success  btn-sm" id="csub" onclick="Counter();"><span class="iconfont  icon-zhankai  " id="csub"></span></button>
-									<label class="" id="count">1</label>
+									<label class="" id="count" name="count" runat="server" >1</label>
+                                     
+                                 
 									<button type="button" class="btn btn-success  btn-sm" id="cadd" onclick="Counter();"><span class="iconfont icon-zhankai1 " id="cadd"></span></button>
 								</td>
 								<td>
@@ -308,25 +314,72 @@
 								</td>
 							</tr>
 						</div>
+                            
+                        <div class="Box-item" id="Box-item2">
+							<tr class="info" >
+								
+								<td>
+									<img class="img-circle img-style "  id="Prpt2" runat="server"  src="../images/13.jpg">
+								</td>
+								<td>
+									<label id="Prname2" runat="server"> 电视 </label>
+								</td>
+								<td>
+									<label class="" runat="server" id="price2">99</label>￥
+								</td>
+								<td>
+									<button type="button" class="btn btn-success  btn-sm" id="csub2" onclick="Counter();"><span class="iconfont  icon-zhankai  " id="csub2"></span></button>
+									<label class="" id="count2">1</label>
+									<button type="button" class="btn btn-success  btn-sm" id="cadd2" onclick="Counter();"><span class="iconfont icon-zhankai1 " id="cadd2"></span></button>
+								</td>
+								<td>
+									<label class="" id="Xiaoji2" onload="Counter();"></label>￥
+								</td>
+								<td>
+									<button type="button" class="btn btn-success  btn-sm" id="Box-item2" onclick="removeitem();"><span class="iconfont  icon-lajixiang  " id="Box-item2"></span></button>
+									
+								</td>
+							</tr>
+						</div>
+
 						
 					</tbody>
 					</table>
 				</div>
 				<div class="row">
-			<div class="col-md-8"></div>
+			<div class="col-md-8">
+
+			</div>
+                    
+
+                    
 			<div class="col-md-4">
+                <form action="InsertOrder.aspx" method="post">
 				<div class="hejistyle">
-					<label class="" id="heji"></label>￥&nbsp;&nbsp;&nbsp;&nbsp;
-					<button class="btn btn-success" id="">支付</button>
+					<label class="" id="heji"></label>￥&nbsp;&nbsp;&nbsp;&nbsp;</br>
+                  <div class="divstyle ">
+						<div class="col-lg">
+							<div class="input-group ">
+								<span class="input-group-addon">支付密码</span>
+								<input type="password" class="form-control"  id="" placeholder="输入支付密码" >
+								<span class="input-group-btn">
+									<button class="btn btn-success" id="" type="submit" onclick="">
+										支付
+									</button>
+								</span>
+							</div><!-- /input-group -->
+						</div><!-- /.col-lg-6 -->
+					</div>
 				</div>
-
+                    </form>
 			</div>
+                        
+                   
 		</div>
-
-
+                    
 			</div>
 			
-			
+			</form>
 			
 			
 			
@@ -397,7 +450,6 @@
 				<a href="#home1" class="scroll"><img src="../images/arrow.png" alt=" " class="img-responsive" /></a>
 			</div>
 		</div>
-
 	</div>
 </div>
 	<!-- //footer -->  

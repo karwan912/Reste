@@ -18,24 +18,58 @@ public partial class aspx_single : System.Web.UI.Page
     {
         if (Session["Usernm"] == null)
         {
+            Response.Write("<script language=javascript>alert('请登录！');</script>");
+            Server.Transfer("index.aspx");
 
         }
         else
         {
             string s = Session["Usernm"].ToString(); ;
-            MyName.InnerText = s;
-        }
+            MyName.InnerText = s; 
 
+            
+          
+           
         if (Request.Cookies["ProductId"] != null) {
             string proid = Request.Cookies["ProductId"].Value;//从cookie获取的id
+            PrID.Value = proid;
 
             string mysqlstr = System.Configuration.ConfigurationManager.ConnectionStrings["SqlConnStr"].ConnectionString;
             OleDbConnection conn = new OleDbConnection(mysqlstr);
+            OleDbCommand cmd2;
+            OleDbDataReader datar2;
+            conn.Open();
+
+            string selectsql2 = "select * from Comment where ProductID='" + proid + "' ";
+
+            cmd2 = new OleDbCommand(selectsql2, conn);
+
+            try {
+                datar2 = cmd2.ExecuteReader();
+                if (datar2.Read()) { 
+                
+                    /*******从这里开始写*******/
+
+                }
+            
+            }catch(Exception ex){
+            
+            }
+
+
+
+
+
+
+
+
+
             OleDbCommand cmd;
             OleDbDataReader datar;
+           
 
             string selectsql = "select * from Product where ProductID='" + proid + "' ";
-            conn.Open();
+            
             cmd = new OleDbCommand(selectsql, conn);
 
             try
@@ -94,7 +128,7 @@ public partial class aspx_single : System.Web.UI.Page
             conn.Close();
 
         }
-
+       }
 
     }
 }

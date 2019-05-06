@@ -69,8 +69,8 @@ public partial class aspx_Register : System.Web.UI.Page
 
                 Session["Usernm"] = usnm;
                 Session["Userid"] = id;
-
-                Response.Redirect("index.aspx");
+                Response.Write("<script language=javascript>alert('注册成功！ 请完善个人信息');</script>");
+                Server.Transfer("personal.aspx");
 
             }
             else {
