@@ -56,18 +56,18 @@ public partial class aspx_InsertComment : System.Web.UI.Page
                       OleDbDataReader datar2;
                       string insertsql = "insert into Comment(UserID,ProductID,Star,Content,Commenttime) values('" + Userid + "','" + proid + "','" + fakestar + "','" + mycomment + "','" + time + "')";
                       cmd2 = new OleDbCommand(insertsql, conn);
-
+                     // Response.Write(proid);
                       try {
-                          int i = cmd2.ExecuteNonQuery();
-                          if (i > 0)
+                         
+                          datar2 = cmd2.ExecuteReader();
+                          while (datar2.Read())
                           {
-                              Response.Write("<script language=javascript>alert('评论成功！');</script>");
-                              Server.Transfer("index.aspx");
+                              
+                            // Response.Write("<script language=javascript>alert('评论成功！');</script>");
+                           //  Server.Transfer("index.aspx");
                           }
-                          else
-                          {
-                              Response.Write("11111");
-                          }
+                          Response.Write("<script language=javascript>alert('评论成功！');</script>");
+                          Server.Transfer("index.aspx");
                       
                       }catch(Exception ex){
                           Response.Write("2333333");

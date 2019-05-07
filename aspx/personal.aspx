@@ -150,8 +150,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
 			<div class="search_form">
 				<form action="#" method="post">
-					<input type="text" name="Search" placeholder="Search...">
-					<input type="submit" value="Send">
+					<input type="text" name="Search" placeholder="输入产品名...">
+					<input type="submit" value="搜素">
 				</form>
 			</div>
 		</div>
@@ -261,9 +261,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-5">
-				<form method="post" action="">
+				
 					<div class="divstyle"> 
-						<img  class="img-circle img-style2  divstyle " id="" src="../images/14.jpg">&nbsp;&nbsp;&nbsp;&nbsp;
+						<img  class="img-circle img-style2  divstyle " id="" src="../images/t1.png">&nbsp;&nbsp;&nbsp;&nbsp;
 						&nbsp;&nbsp;&nbsp;&nbsp;
 						&nbsp;&nbsp;&nbsp;&nbsp;<br/>
 						<input type="file" name="更换照片" class="upfile" value="更换照片">
@@ -275,7 +275,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						<div class="col-lg">
 							<div class="input-group ">
 								<span class="input-group-addon">用户名</span>
-								<input type="text" class="form-control"  id="username" placeholder="AlimjanYasin" disabled="disabled">
+								<input type="text" class="form-control"  id="username" runat="server" name="Usnm" placeholder="AlimjanYasin"  disabled="disabled">
 								<span class="input-group-btn">
 									<button class="btn btn-success" type="button" id="username" onclick="changetype();">
 										修改
@@ -292,7 +292,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						<div class="col-lg">
 							<div class="input-group ">
 								<span class="input-group-addon">注册邮箱</span>
-								<input type="email" class="form-control"  id="useremail" placeholder="A_Yasin@163.com" disabled="disabled">
+								<input type="text" class="form-control"  id="useremail" runat="server"  placeholder="A_Yasin@163.com" disabled="disabled">
 								<span class="input-group-btn">
 									<button class="btn btn-success" id="useremail" type="button" onclick="changetype();">
 										修改
@@ -302,12 +302,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						</div><!-- /.col-lg-6 -->
 					</div>
 
-					
+					<form  action="InsertPayPass.aspx"  method="post">
 					<div class="divstyle ">
 						<div class="col-lg">
 							<div class="input-group ">
 								<span class="input-group-addon">支付密码</span>
-								<input type="password" class="form-control"  id="userpaypass" placeholder="请设定支付密码..." >
+								<input type="password" class="form-control"  name="uspyps" id="userpaypass" placeholder="请设定支付密码..." >
 								
 							</div><!-- /input-group -->
 						</div><!-- /.col-lg-6 -->
@@ -317,7 +317,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						<div class="col-lg">
 							<div class="input-group ">
 								<span class="input-group-addon">收货地址</span>
-								<input type="text" class="form-control" id="useraddr" placeholder="请输入你的收货地址" >
+								<input type="text" class="form-control" name="usaddr" id="useraddr" placeholder="请输入你的收货地址" >
 								
 							</div><!-- /input-group -->
 						</div><!-- /.col-lg-6 -->

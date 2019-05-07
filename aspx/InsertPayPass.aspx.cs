@@ -13,10 +13,11 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Text;
 
-public partial class aspx_personal : System.Web.UI.Page
+public partial class aspx_InsertPayPass : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+
 
         if (Session["Usernm"] == null)
         {
@@ -26,39 +27,40 @@ public partial class aspx_personal : System.Web.UI.Page
         else
         {
             string s = Session["Usernm"].ToString(); ;
-            MyName.InnerText = s;
+           // MyName.InnerText = s;
             string Userid = Session["UserID"].ToString();
 
-
+            //string Uspaps = Request.Form["uspyps"];
+            string UsAddr = Request.Form["usaddr"];
+            string Uspaps = System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(Request.Form["uspyps"], "md5");
+          //  Response.Write(UsAddr);
             string mysqlstr = System.Configuration.ConfigurationManager.ConnectionStrings["SqlConnStr"].ConnectionString;
             OleDbConnection conn = new OleDbConnection(mysqlstr);
             OleDbCommand cmd;
             OleDbDataReader datar;
-            string selectsql = "select * from UserList where UserID='" + Userid + "' ";
+
+           
+            string selectsql = "update UserList set PayPass='" + Uspaps + "',Address='" + UsAddr + "'  where UserID='" + Userid + "' ";
             conn.Open();
             cmd = new OleDbCommand(selectsql, conn);
 
             try {
-            datar = cmd.ExecuteReader();
-            if (datar.Read()) {
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    Response.Write("<script language=javascript>alert('个人信息完善成功！');</script>");
+                    Server.Transfer("index.aspx");
+                }
+                else
+                {
+                    Response.Write("11111");
+                }
 
-                string Usnm = datar["UserName"].ToString();
-                string Usem = datar["UserEmail"].ToString();
-
-                username.Value = Usnm.Trim();
-                useremail.Value = Usem.Trim();
-
-                //Response.Write(Usem);
-
-            
-            }
             
             }catch(Exception ex){
-            
-            
+
+                Response.Write("数据库操作错误！");
             }
-            
-            
 
 
 

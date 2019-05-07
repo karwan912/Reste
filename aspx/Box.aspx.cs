@@ -39,7 +39,7 @@ public partial class aspx_Box : System.Web.UI.Page
             OleDbCommand cmd3;
             OleDbDataReader datar3;
            // string myprid3 = "3";
-            string selectsql3 = "select * from Product where ProductID=3 ";
+            string selectsql3 = "select * from Product where ProductID=21 ";
             cmd3 = new OleDbCommand(selectsql3, conn);
             try {
                 datar3 = cmd3.ExecuteReader();

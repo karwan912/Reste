@@ -18,8 +18,7 @@ public partial class aspx_single : System.Web.UI.Page
     {
         if (Session["Usernm"] == null)
         {
-            Response.Write("<script language=javascript>alert('请登录！');</script>");
-            Server.Transfer("index.aspx");
+           
 
         }
         else
@@ -36,32 +35,10 @@ public partial class aspx_single : System.Web.UI.Page
 
             string mysqlstr = System.Configuration.ConfigurationManager.ConnectionStrings["SqlConnStr"].ConnectionString;
             OleDbConnection conn = new OleDbConnection(mysqlstr);
-            OleDbCommand cmd2;
-            OleDbDataReader datar2;
+           
             conn.Open();
 
-            string selectsql2 = "select * from Comment where ProductID='" + proid + "' ";
-
-            cmd2 = new OleDbCommand(selectsql2, conn);
-
-            try {
-                datar2 = cmd2.ExecuteReader();
-                if (datar2.Read()) { 
-                
-                    /*******从这里开始写*******/
-
-                }
-            
-            }catch(Exception ex){
-            
-            }
-
-
-
-
-
-
-
+         
 
 
             OleDbCommand cmd;
@@ -97,8 +74,8 @@ public partial class aspx_single : System.Web.UI.Page
 
                       string prpt2 = temp.Replace(temp[temp.Length-5],'2');
                       string prpt3 = temp.Replace(temp[temp.Length - 5], '3');
-                       
 
+                     
 
 
                           Photo2a.Attributes.Add("data-thumb", prpt2.Trim());
@@ -125,7 +102,44 @@ public partial class aspx_single : System.Web.UI.Page
             }
 
 
+            OleDbCommand cmd2;
+            OleDbDataReader datar2;
+            string selectsql2 = "select * from Comment where ProductID='" + proid + "' ";
+
+            cmd2 = new OleDbCommand(selectsql2, conn);
+
+            try
+            {
+                datar2 = cmd2.ExecuteReader();
+                while (datar2.Read())
+                {
+
+                    string usnm = s;// session 获得的用户名
+                    string comtime = datar2["Commenttime"].ToString();
+                    string con = datar2["Content"].ToString();
+
+
+                    UserName.InnerText = usnm.Trim();
+                    ComTime.InnerText = comtime.Trim();
+                    content.InnerText = con.Trim();
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            
+
+
+
             conn.Close();
+
+
+
+
 
         }
        }

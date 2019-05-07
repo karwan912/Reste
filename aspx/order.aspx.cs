@@ -69,7 +69,7 @@ public partial class aspx_order : System.Web.UI.Page
 
                     OleDbCommand cmd3;
                     OleDbDataReader datar3;
-                    string fakeproid = "3";
+                    string fakeproid = "21";
                     string selectsql3 = "select * from Product where ProductID='" + fakeproid + "' ";
                     cmd3 = new OleDbCommand(selectsql3, conn);
                     try {

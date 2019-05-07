@@ -36,7 +36,8 @@ public partial class aspx_InsertOrder : System.Web.UI.Page
            string myStatus = "待收货";
            string myTime= DateTime.Now.ToString();
            string Userid = Session["UserID"].ToString();
-           string pridfake = "3";
+          
+         /*   string pridfake = "21";
            OleDbCommand cmd3;
            OleDbDataReader datar3;
            string Prnum2 = "1";
@@ -49,6 +50,7 @@ public partial class aspx_InsertOrder : System.Web.UI.Page
            }catch(Exception ex){
            
            }
+          * */
 
          //  Response.Write(myStatus);
          //  Response.Write(myTime);

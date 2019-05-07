@@ -314,7 +314,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							</td>
 						</tr>
 					</div>
-
+                    <!---
 					<div>
 						<tr class="info">
 							<td>
@@ -344,7 +344,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						</tr>
 					</div>
 					
-					
+					-->
 
 					
 				</tbody>
